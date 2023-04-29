@@ -1,0 +1,86 @@
+@font-face {
+  font-family: Dand;
+  src: url(../public/Fonts/Dandelions.otf);
+}
+
+@font-face {
+  font-family: Mea;
+  src: url(../public/Fonts/MeaCulpa-Regular.ttf);
+}
+
+@font-face {
+  font-family: Khaled;
+  src: url(../public/Fonts/Khaled\ Font.otf);
+}
+
+@font-face {
+  font-family: Contrail;
+  src: url(../public/Fonts/ContrailOne-Regular.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+
+:root {
+  font-family: Dand;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #CFB1D7;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+@media screen and (max-width:900px) {
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  body {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+}
+
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #824393 #ffffff;
+}
+
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #824393;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+}
