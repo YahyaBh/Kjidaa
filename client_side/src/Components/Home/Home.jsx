@@ -7,18 +7,33 @@ import ImagePack from '../../assets/Images/Home/Carousel/8.jpg';
 import Footer from "../Footer/Footer";
 import { RiWhatsappFill } from 'react-icons/ri'
 import Navbar from "../Navbar/Navbar";
+import Aos from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+
+import { AiOutlineSend } from 'react-icons/ai'
 
 const Home = () => {
+
+
+    useEffect(() => {
+        Aos.init({
+            once: true
+        })
+
+    }, [])
+
+
     return (
         <div>
-            <Navbar target='home' />
+            <Navbar target='home' data-aos="fade-down" />
 
             <header>
                 <div className="header-text">
-                    <h1>Bienvenue Chez <span>Kjidaa</span></h1>
+                    <h1 data-aos="fade-right">Bienvenue Chez <span>Kjidaa</span></h1>
 
-                    <h3>le meilleur traiteur dans le maroc</h3>
-                    <button>Reservation</button>
+                    <h3 data-aos="fade-right" data-aos-duration="500">le meilleur traiteur dans le maroc</h3>
+                    <button data-aos="fade-right" data-aos-duration="1000">Reservation</button>
                 </div>
 
                 <Swiper
@@ -43,20 +58,20 @@ const Home = () => {
 
 
             <section id="location" className="location-container">
-                <h2>Notre <span>Localisation</span></h2>
+                <h2 data-aos="fade-down">Notre <span>Localisation</span></h2>
 
-                <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d3319.9373322766514!2d-5.370133096553818!3d33.68468682959433!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzPCsDQxJzA1LjYiTiA1wrAyMicwOC4wIlc!5e0!3m2!1sen!2sus!4v1682681535602!5m2!1sen!2sus" width="600" height="450" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                <iframe data-aos="zoom-in" src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d3319.9373322766514!2d-5.370133096553818!3d33.68468682959433!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzPCsDQxJzA1LjYiTiA1wrAyMicwOC4wIlc!5e0!3m2!1sen!2sus!4v1682681535602!5m2!1sen!2sus" width="600" height="450" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </section>
 
 
             <section id="kjidaa-packs" className="packs">
 
-                <h2>Découvrez <span>Nos</span> Packs</h2>
+                <h2 data-aos="fade-down">Découvrez <span>Nos</span> Packs</h2>
 
 
 
                 <div className="cards-container">
-                    <div className="card-container">
+                    <div data-aos="fade-right" className="card-container">
 
                         <img src={ImagePack} alt="anniv" />
 
@@ -86,7 +101,7 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <div className="card-container main-card">
+                    <div data-aos="fade-right" className="card-container main-card">
 
                         <img src={ImagePack} alt="anniv" />
 
@@ -116,7 +131,7 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <div className="card-container">
+                    <div data-aos="fade-right" className="card-container">
 
                         <img src={ImagePack} alt="anniv" />
 
@@ -150,35 +165,39 @@ const Home = () => {
 
 
 
-                <h2>Traiteur En Ligne Au</h2>
-                <span>Maroc</span>
+                <h2 data-aos="fade-down">Traiteur En Ligne Au</h2>
+                <span data-aos="fade-down">Maroc</span>
 
+                <div className="cards-categor">
+                    <div className="images-container">
+                        <div data-aos="fade-right" className="image-container">
+                            <img src={ImagePack} alt="image1" />
 
-                <div className="images-container">
-                    <div className="image-container">
-                        <img src={ImagePack} alt="image1" />
+                            <h2>My Cake Design</h2>
+                        </div>
 
-                        <h2>My Cake Design</h2>
+                        <div data-aos="fade-right" className="image-container">
+                            <img src={ImagePack} alt="image2" />
+
+                            <h2>My Cake Design</h2>
+
+                        </div>
+
+                        <div data-aos="fade-right" className="image-container">
+                            <img src={ImagePack} alt="image3" />
+
+                            <h2>My Cake Design</h2>
+                        </div>
+
+                        <div data-aos="fade-right" className="image-container">
+                            <img src={ImagePack} alt="image4" />
+
+                            <h2>My Cake Design</h2>
+                        </div>
                     </div>
 
-                    <div className="image-container">
-                        <img src={ImagePack} alt="image2" />
 
-                        <h2>My Cake Design</h2>
-
-                    </div>
-
-                    <div className="image-container">
-                        <img src={ImagePack} alt="image3" />
-
-                        <h2>My Cake Design</h2>
-                    </div>
-
-                    <div className="image-container">
-                        <img src={ImagePack} alt="image4" />
-
-                        <h2>My Cake Design</h2>
-                    </div>
+                    <button>Afficher tout</button>
                 </div>
             </section>
 
@@ -188,7 +207,9 @@ const Home = () => {
                     disableOnInteraction: false,
                 }}
                 modules={[Autoplay]}
-                className="carousel-swiper">
+                className="carousel-swiper"
+                data-aos="zoom-in"
+            >
                 <SwiperSlide className="swiper-container">
                     <div className="image-container-swiper">
                         <img src={ImagePack} alt="image-pack" />
@@ -214,13 +235,13 @@ const Home = () => {
 
             <section className="even-orga" id="even-orga">
 
-                <h2>Traiteur et Organisateur des</h2>
-                <span>Evènements</span>
+                <h2 data-aos="fade-down">Traiteur et Organisateur des</h2>
+                <span data-aos="fade-down">Evènements</span>
 
 
                 <div className="flex-container-orders">
                     <div className="flex-container-column">
-                        <div className="order-even">
+                        <div data-aos="fade-down" className="order-even">
                             <div className="left-panel">
                                 <h4>ACCUEIL</h4>
                                 <hr />
@@ -231,7 +252,7 @@ const Home = () => {
                                 <h3>01</h3>
                             </div>
                         </div>
-                        <div className="order-even">
+                        <div data-aos="fade-down" data-aos-duration="250" className="order-even">
                             <div className="left-panel">
                                 <h4>CUISINE MAROCAINE</h4>
                                 <hr />
@@ -242,7 +263,7 @@ const Home = () => {
                                 <h3>02</h3>
                             </div>
                         </div>
-                        <div className="order-even">
+                        <div data-aos="fade-down" data-aos-duration="500" className="order-even">
                             <div className="left-panel">
                                 <h4>CAKE DESIGN</h4>
                                 <hr />
@@ -255,12 +276,12 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <div className="cycle-with-name">
+                    <div data-aos="fade-up" data-aos-duration="750" className="cycle-with-name">
                         K
                     </div>
 
                     <div className="flex-container-column">
-                        <div className="order-even">
+                        <div data-aos="fade-down" data-aos-duration="1000" className="order-even">
                             <div className="right-panel">
                                 <h3>04</h3>
                             </div>
@@ -273,7 +294,7 @@ const Home = () => {
 
 
                         </div>
-                        <div className="order-even">
+                        <div data-aos="fade-down" data-aos-duration="1250" className="order-even">
 
                             <div className="right-panel">
                                 <h3>05</h3>
@@ -286,7 +307,7 @@ const Home = () => {
 
 
                         </div>
-                        <div className="order-even">
+                        <div data-aos="fade-down" data-aos-duration="1500" className="order-even">
 
                             <div className="right-panel">
                                 <h3>06</h3>
@@ -329,25 +350,23 @@ const Home = () => {
                 <form onSubmit={''} method="post">
 
                     <div className="inputs-name-tel">
-                        <input type="text" placeholder="Name" name="name" id="name" maxLength={'20'} minLength={'4'} required />
+                        <input data-aos="fade-right" type="text" placeholder="Name" name="name" id="name" maxLength={'20'} minLength={'4'} required />
 
-                        <input type="tel" placeholder="Tele" name="tel" id="tel" maxLength={'20'} minLength={'8'} required />
+                        <input data-aos="fade-right" type="tel" placeholder="Tele" name="tel" id="tel" maxLength={'20'} minLength={'8'} required />
                     </div>
 
 
-                    <input type="email" placeholder="Email" name="email" id="email" maxLength={'30'} minLength={'8'} required />
+                    <input data-aos="fade-right" type="email" placeholder="Email" name="email" id="email" maxLength={'30'} minLength={'8'} required />
 
 
-                    <textarea required placeholder="Message" name="message" id="message" cols="30" rows="10" maxLength={'300'} minLength={'10'}>
-
-                    </textarea>
+                    <textarea data-aos="fade-in" required placeholder="Message" name="message" id="message" cols="30" rows="10" maxLength={'300'} minLength={'10'} />
 
 
-                    <div className="checkbox-container">
+                    <div data-aos="fade-right" className="checkbox-container">
                         <input type="checkbox" name="accept" id="accept" required />
                         <label htmlFor="accept"> J&#39;accepte que mes données soumises soient collectées et stockées.</label>
                     </div>
-                    <button type="submit">Envoyez</button>
+                    <button data-aos="fade-right" type="submit">Envoyez <AiOutlineSend /></button>
 
                 </form>
             </section>

@@ -47,7 +47,7 @@ const Footer = () => {
 
             <div className="under-footer">
                 <div className="made-by">
-                    WEBINA © 2023 All Rights Reserved
+                    <span><a href='https://webinasales.com/'>WEBINA</a></span> © 2023 All Rights Reserved
                 </div>
 
                 <div className="social-media">

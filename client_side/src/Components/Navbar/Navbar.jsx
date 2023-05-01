@@ -20,20 +20,17 @@ const Navbar = ({ target }) => {
         }
     }
 
-
-    console.log(count);
-
     return (
 
 
         <>
             <div className='contact_header'>
                 <div>
-                    <h3>APPELEZ NOUS +212 667-667153</h3>
+                    <h3 data-aos="fade-down">APPELEZ NOUS +212 667-667153</h3>
                 </div>
 
                 <div>
-                    <h3>APPELEZ NOUS +212 661374817</h3>
+                    <h3 data-aos="fade-down">APPELEZ NOUS +212 661374817</h3>
                 </div>
             </div>
 
@@ -42,17 +39,17 @@ const Navbar = ({ target }) => {
 
                 <ul>
                     <div>
-                        <img src={Logo} alt="Logo" />
+                        <img data-aos="fade-right" src={Logo} alt="Logo" />
                     </div>
 
                     <ul>
-                        <li className={target === 'home' ? 'border_right active' : 'border_right'}><a href='/'>Accueil</a></li>
-                        <li className={target === 'nos-service' ? 'border_right active' : 'border_right'}><a href='/nos-service'>Nos Service</a></li>
-                        <li className={target === 'nos-produits' ? 'border_right active' : 'border_right'}><a href='/nos-produits'>Nos Produits</a></li>
-                        <li className={target === 'reservation' ? 'border_right active' : 'border_right'}><a href='/reservation'>Reservation</a></li>
-                        <li className={target === 'a-props' ? 'border_right active' : 'border_right'}><a href='/a-propos'>A Propos</a></li>
-                        <li className={target === 'blog' ? 'border_right active' : 'border_right'}><a href='/blog'>Blog</a></li>
-                        <li className={target === 'contact' ? `active` : ``}><a href='/contact'>Contact</a></li>
+                        <li data-aos="fade-left" data-aos-duration="200" className={target === 'home' ? 'border_right active' : 'border_right'}><a href='/'>Accueil</a></li>
+                        <li data-aos="fade-left" data-aos-duration="400" className={target === 'nos-service' ? 'border_right active' : 'border_right'}><a href='/nos-service'>Nos Service</a></li>
+                        <li data-aos="fade-left" data-aos-duration="600" className={target === 'nos-produits' ? 'border_right active' : 'border_right'}><a href='/nos-produits'>Nos Produits</a></li>
+                        <li data-aos="fade-left" data-aos-duration="800" className={target === 'reservation' ? 'border_right active' : 'border_right'}><a href='/reservation'>Reservation</a></li>
+                        <li data-aos="fade-left" data-aos-duration="1000" className={target === 'a-props' ? 'border_right active' : 'border_right'}><a href='/a-propos'>A Propos</a></li>
+                        <li data-aos="fade-left" data-aos-duration="1200" className={target === 'blog' ? 'border_right active' : 'border_right'}><a href='/blog'>Blog</a></li>
+                        <li data-aos="fade-left" data-aos-duration="1400" className={target === 'contact' ? `active` : ``}><a href='/contact'>Contact</a></li>
                     </ul>
                 </ul>
 
