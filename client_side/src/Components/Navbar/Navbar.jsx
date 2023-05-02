@@ -2,7 +2,7 @@ import './Navbar.scss'
 import Logo from '../../assets/Images/Gen/Logo.png'
 import { MdOutlineSegment } from 'react-icons/md'
 import { AiOutlineClose } from 'react-icons/ai'
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 // eslint-disable-next-line react/prop-types
 const Navbar = ({ target }) => {
@@ -45,7 +45,7 @@ const Navbar = ({ target }) => {
                     <ul>
                         <li data-aos="fade-left" data-aos-duration="200" className={target === 'home' ? 'border_right active' : 'border_right'}><a href='/'>Accueil</a></li>
                         <li data-aos="fade-left" data-aos-duration="400" className={target === 'nos-service' ? 'border_right active' : 'border_right'}><a href='/nos-service'>Nos Service</a></li>
-                        <li data-aos="fade-left" data-aos-duration="600" className={target === 'nos-produits' ? 'border_right active' : 'border_right'}><a href='/nos-produits'>Nos Produits</a></li>
+                        <li data-aos="fade-left" data-aos-duration="600" className={target === 'nos-packs' ? 'border_right active' : 'border_right'}><a href='/nos-packs'>Nos Packs</a></li>
                         <li data-aos="fade-left" data-aos-duration="800" className={target === 'reservation' ? 'border_right active' : 'border_right'}><a href='/reservation'>Reservation</a></li>
                         <li data-aos="fade-left" data-aos-duration="1000" className={target === 'a-props' ? 'border_right active' : 'border_right'}><a href='/a-propos'>A Propos</a></li>
                         <li data-aos="fade-left" data-aos-duration="1200" className={target === 'blog' ? 'border_right active' : 'border_right'}><a href='/blog'>Blog</a></li>
