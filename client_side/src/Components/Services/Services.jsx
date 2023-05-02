@@ -72,6 +72,7 @@ const Services = () => {
         pageNumber.push(i);
     }
 
+
     return (
         <div>
 
@@ -100,8 +101,8 @@ const Services = () => {
                             <hr />
 
                             <div className="range-price">
-                                <Slider value={priceRange} onChange={e => setPriceRange(e.target.value)} valueLabelDisplay={'off'} min={(products.reduce((prev, cur) => (cur.price > prev.price ? cur : prev))).price} max={(products.reduce((prev, cur) => (cur.price > prev.price ? cur : prev))).price} />
-                                <h4>Prix : {priceRange[0]} Dhs - {priceRange[1]} Dhs</h4>
+                                <Slider value={priceRange} onChange={e => setPriceRange(e.target.value)} valueLabelDisplay={'on'} step={10} min={products.reduce((prev, cur) => (cur.price < prev.price ? cur : prev)).price} max={products.reduce((prev, cur) => (cur.price > prev.price ? cur : prev)).price} />
+                                <h4>Prix : {products.reduce((prev, cur) => (cur.price < prev.price ? cur : prev)).price} Dhs - {products.reduce((prev, cur) => (cur.price > prev.price ? cur : prev)).price} Dhs</h4>
                             </div>
 
                             <div className="category-products">
