@@ -7,21 +7,13 @@ import ImagePack from '../../assets/Images/Home/Carousel/8.jpg';
 import Footer from "../Footer/Footer";
 import { RiWhatsappFill } from 'react-icons/ri'
 import Navbar from "../Navbar/Navbar";
-import Aos from "aos";
-import 'aos/dist/aos.css';
-import { useEffect } from "react";
 
 import { AiOutlineSend } from 'react-icons/ai'
 
 const Home = () => {
 
 
-    useEffect(() => {
-        Aos.init({
-            once: true
-        })
-
-    }, [])
+    
 
 
     return (
