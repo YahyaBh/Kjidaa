@@ -150,8 +150,7 @@ const Services = () => {
                         </div>
 
                         <div className="products-container" >
-
-                            {currentProducts.map((product, index) => (
+                            {filteredProducts.length > 0 ? currentProducts.map((product, index) => (
                                 <div key={index} className={`single-product ${animat ? 'animat-cards' : ''}`} >
                                     <img src="./Images_public/Carousel/8.jpg" alt={product.name} />
                                     <div className="body">
@@ -160,16 +159,17 @@ const Services = () => {
                                         <button>ACHETER</button>
                                     </div>
                                 </div>
-                            ))}
-                        </div>
+                            )) : <div><h3 style={{fontSize : '40px', textAlign: 'center' , color : '#000' }}>No Products Available</h3></div>}
 
-
-                        <div className="pagination">
-                            {pageNumber.map((number) => (
-                                <button key={number} className={currentPage === number ? `button-selected` : ''} onClick={e => handlePageChange(e, number)}>
-                                    {number}
-                                </button>
-                            ))}
+                            {filteredProducts.length > 0 && (
+                                <div className="pagination">
+                                    {pageNumber.map((number) => (
+                                        <button key={number} className={currentPage === number ? `button-selected` : ''} onClick={e => handlePageChange(e, number)}>
+                                            {number}
+                                        </button>
+                                    ))}
+                                </div>
+                            )}
                         </div>
                     </section>
                 </div>
