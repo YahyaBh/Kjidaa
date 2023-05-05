@@ -30,6 +30,9 @@ const Services = () => {
 
     useEffect(() => {
         fetchProducts();
+        setTimeout(() => {
+            setLoading(false);
+        }, 3000);
     }, []);
 
     useEffect(() => {
@@ -48,7 +51,6 @@ const Services = () => {
         axios.get("/api/products").then((res) => {
             setProducts(res.data);
         });
-        setLoading(false);
     };
 
 

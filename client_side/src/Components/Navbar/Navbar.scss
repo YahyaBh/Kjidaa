@@ -91,32 +91,32 @@
     aside {
         display: none;
         position: fixed;
-        width: 100%;
-        left:0 ;
+        width: 300px;
+        right: 0;
         top: 0;
         height: 100dvh;
         background-color: #6c4177;
         z-index: 99;
-        padding: 10px;
 
         header {
+            padding: 10px;
             svg {
-                float: right;
+                float: left;
                 fill: #fff;
             }
         }
 
         section {
-            height: 100dvh;
+            height: 100%;
             ul {
                 display: flex;
                 flex-direction: column;
-                justify-content: flex-start;
-                align-items: flex-start;
+                justify-content: right;
+                align-items: center;
                 height: 100%;
                 gap: 30px;
-                width: 100%;
-
+                width: auto;
+                text-align: center;
 
                 li {
                     list-style: none;
@@ -137,7 +137,11 @@
     }
 
     .active {
-        display: block !important;
+        display: flex !important;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 6%;
     }
 
     .segmer {
