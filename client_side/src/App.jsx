@@ -7,6 +7,7 @@ import Aos from "aos";
 import 'aos/dist/aos.css';
 import Packs from './Components/Packs/Packs';
 import NotFound from './Error/NotFound/NotFound';
+import Reservation from './Components/Reservation/Reservation';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Route path='/' element={<Home />} exact />
         <Route path='/nos-service' element={<Services />} exact />
         <Route path='/nos-packs' element={<Packs />} exact />
+        <Route path='/reservation' element={<Reservation />} exact />
         {/* <Route path='/about' element={<Packs />} exact />
         <Route path='/blogs' element={<Packs />} exact />
         <Route path='/contact' element={<Packs />} exact /> */}

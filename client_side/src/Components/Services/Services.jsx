@@ -6,6 +6,8 @@ import axios from "axios";
 import Slider from "@mui/material/Slider";
 import { AiOutlineInsertRowAbove } from 'react-icons/ai'
 import Loading from "../../Layouts/Loading/Loading";
+import cookie from "cookies-js";
+
 
 // eslint-disable-next-line react/prop-types
 const Services = () => {
@@ -75,6 +77,34 @@ const Services = () => {
     const pageNumber = [];
     for (let i = 1; i <= totalPages; i++) {
         pageNumber.push(i);
+    }
+
+
+    const addProduct = (product, e) => {
+        const products = cookie.get('products');
+
+
+        const productsArray = products ? JSON.parse(products) : [];
+
+        const newProduct = { name: product.name, price: product.price, quantity: 1 };
+
+        // Check if product already exists in array
+        const existingProduct = productsArray.find(product => product.name === newProduct.name);
+
+        if (existingProduct) {
+            // If product already exists, update the quantity
+            existingProduct.quantity += newProduct.quantity;
+        } else {
+            // If product does not exist, add it to the array
+            productsArray.push(newProduct);
+        }
+
+        const updatedValue = JSON.stringify(productsArray);
+
+        cookie.set('products', updatedValue);
+
+
+        alert(`${product.quantity ? product.quantity : 1} service ${product.name} a été ajouté avec succès`);
     }
 
 
@@ -164,7 +194,7 @@ const Services = () => {
                                         <div className="body">
                                             <h3>{product.name}</h3>
                                             <p>{product.price} Dhs</p>
-                                            <button>ACHETER</button>
+                                            <button onClick={e => addProduct(product, e)}>ACHETER</button>
                                         </div>
                                     </div>
                                 )) : <div><h3 style={{ fontSize: '40px', textAlign: 'center', color: '#000' }}>No Products Available</h3></div>}
