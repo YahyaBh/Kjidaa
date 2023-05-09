@@ -1,190 +1,200 @@
-{
-    "pack1": [
-        {
-            "id": "711ee64d013e4f39015f04f8849fc7bc",
-            "img": "./assets/NosPacks/8.jpg",
-            "name": "Pack L3rssan",
-            "props": [
-                "TABLES COMPRENANT : BUFFET / DÉCORATION",
-                "ET INSTALLATION",
-                "wedding cakes",
-                "Sablé personnalisé",
-                "Hanne",
-                "Sujet dragée",
-                "Macaron",
-                "Dates majhoul",
-                "Chocolate"
-            ],
-            "price": "6.770",
-            "old_price": "7.000"
-        },
-        {
-            "id": "2937d36084d14d6e40d0d478d2e82aff",
-            "img": "./assets/NosPacks/8.jpg",
-            "name": "Pack L3rssan",
-            "props": [
-                "TABLES COMPRENANT : BUFFET / DÉCORATION",
-                "ET INSTALLATION",
-                "wedding cakes",
-                "Sablé personnalisé",
-                "Hanne",
-                "Sujet dragée",
-                "Macaron",
-                "Dates majhoul",
-                "Chocolate"
-            ],
-            "price": "6.770",
-            "old_price": "7.000"
-        },
-        {
-            "id": "2937d36084d14d6e40d0d478d2e82aff",
-            "img": "./assets/NosPacks/8.jpg",
-            "name": "Pack L3rssan",
-            "props": [
-                "TABLES COMPRENANT : BUFFET / DÉCORATION",
-                "ET INSTALLATION",
-                "wedding cakes",
-                "Sablé personnalisé",
-                "Hanne",
-                "Sujet dragée",
-                "Macaron",
-                "Dates majhoul",
-                "Chocolate"
-            ],
-            "price": "6.770",
-            "old_price": "7.000"
-        },
-        {
-            "id": "2937d36084d14d6e40d0d478d2e82aff",
-            "img": "./assets/NosPacks/8.jpg",
-            "name": "Pack L3rssan",
-            "props": [
-                "TABLES COMPRENANT : BUFFET / DÉCORATION",
-                "ET INSTALLATION",
-                "wedding cakes",
-                "Sablé personnalisé",
-                "Hanne",
-                "Sujet dragée",
-                "Macaron",
-                "Dates majhoul",
-                "Chocolate"
-            ],
-            "price": "6.770",
-            "old_price": "7.000"
-        },
-        {
-            "id": "2937d36084d14d6e40d0d478d2e82aff",
-            "img": "./assets/NosPacks/8.jpg",
-            "name": "Pack L3rssan",
-            "props": [
-                "TABLES COMPRENANT : BUFFET / DÉCORATION",
-                "ET INSTALLATION",
-                "wedding cakes",
-                "Sablé personnalisé",
-                "Hanne",
-                "Sujet dragée",
-                "Macaron",
-                "Dates majhoul",
-                "Chocolate"
-            ],
-            "price": "6.770",
-            "old_price": "7.000"
-        }
-    ],
-
-
-
-
-    "pack2": [
-        {
-            "id": "711ee64d013e4f39015f04f8849fc7bc",
-            "img": "./assets/NosPacks/8.jpg",
-            "name": "Pack L3rssan",
-            "props": [
-                "TABLES COMPRENANT : BUFFET / DÉCORATION",
-                "ET INSTALLATION",
-                "wedding cakes",
-                "Sablé personnalisé",
-                "Hanne",
-                "Sujet dragée",
-                "Macaron",
-                "Dates majhoul",
-                "Chocolate"
-            ],
-            "price": "6.770",
-            "old_price": "7.000"
-        },
-        {
-            "id": "2937d36084d14d6e40d0d478d2e82aff",
-            "img": "./assets/NosPacks/8.jpg",
-            "name": "Pack L3rssan",
-            "props": [
-                "TABLES COMPRENANT : BUFFET / DÉCORATION",
-                "ET INSTALLATION",
-                "wedding cakes",
-                "Sablé personnalisé",
-                "Hanne",
-                "Sujet dragée",
-                "Macaron",
-                "Dates majhoul",
-                "Chocolate"
-            ],
-            "price": "6.770",
-            "old_price": "7.000"
-        },
-        {
-            "id": "2937d36084d14d6e40d0d478d2e82aff",
-            "img": "./assets/NosPacks/8.jpg",
-            "name": "Pack L3rssan",
-            "props": [
-                "TABLES COMPRENANT : BUFFET / DÉCORATION",
-                "ET INSTALLATION",
-                "wedding cakes",
-                "Sablé personnalisé",
-                "Hanne",
-                "Sujet dragée",
-                "Macaron",
-                "Dates majhoul",
-                "Chocolate"
-            ],
-            "price": "6.770",
-            "old_price": "7.000"
-        },
-        {
-            "id": "2937d36084d14d6e40d0d478d2e82aff",
-            "img": "./assets/NosPacks/8.jpg",
-            "name": "Pack L3rssan",
-            "props": [
-                "TABLES COMPRENANT : BUFFET / DÉCORATION",
-                "ET INSTALLATION",
-                "wedding cakes",
-                "Sablé personnalisé",
-                "Hanne",
-                "Sujet dragée",
-                "Macaron",
-                "Dates majhoul",
-                "Chocolate"
-            ],
-            "price": "6.770",
-            "old_price": "7.000"
-        },
-        {
-            "id": "2937d36084d14d6e40d0d478d2e82aff",
-            "img": "./assets/NosPacks/8.jpg",
-            "name": "Pack L3rssan",
-            "props": [
-                "TABLES COMPRENANT : BUFFET / DÉCORATION",
-                "ET INSTALLATION",
-                "wedding cakes",
-                "Sablé personnalisé",
-                "Hanne",
-                "Sujet dragée",
-                "Macaron",
-                "Dates majhoul",
-                "Chocolate"
-            ],
-            "price": "6.770",
-            "old_price": "7.000"
-        }
-    ]
-}
+[
+    {
+        "Pack laarssan": [
+            {
+                "id": "711ee64d013e4f39015f04f8849fc7bc",
+                "img": "./assets/NosPacks/8.jpg",
+                "name": "Pack 1",
+                "props": [
+                    "4kg de Poulet",
+                    " 4kg de viande rouge",
+                    "la limonade",
+                    "Un dessert variable"
+                ],
+                "price": "2.000",
+                "old_price": "2.500"
+            },
+            {
+                "id": "711ee64d013e4f39015f04f8849fc7bc",
+                "img": "./assets/NosPacks/8.jpg",
+                "name": "Pack 2",
+                "props": [
+                    "Pastilla fruit de mer",
+                    " Grillade",
+                    "la limonade",
+                    "Un dessert variable"
+                ],
+                "price": "3.000",
+                "old_price": "3.500"
+            },
+            {
+                "id": "711ee64d013e4f39015f04f8849fc7bc",
+                "img": "./assets/NosPacks/8.jpg",
+                "name": "Pack 3",
+                "props": [
+                    "Pastilla fruit de mer",
+                    " Grillade",
+                    "Salade riche",
+                    "la limonade",
+                    "Un dessert variable"
+                ],
+                "price": "4.000",
+                "old_price": "4.500"
+            },
+            {
+                "id": "711ee64d013e4f39015f04f8849fc7bc",
+                "img": "./assets/NosPacks/8.jpg",
+                "name": "Pack 4",
+                "props": [
+                    "Pastilla fruit de mer ou Pastilla poulet",
+                    "Demi mouton grille",
+                    "Salade royale",
+                    "la limonade",
+                    "Un dessert variable"
+                ],
+                "price": "5.000",
+                "old_price": "5.500"
+            },
+            {
+                "id": "711ee64d013e4f39015f04f8849fc7bc",
+                "img": "./assets/NosPacks/8.jpg",
+                "name": "Pack 5",
+                "props": [
+                    "Pastilla fruit de mer",
+                    "Grillade",
+                    "Salade royale",
+                    "la limonade",
+                    "De la glace"
+                ],
+                "price": "6.000",
+                "old_price": "6.500"
+            },
+            {
+                "id": "711ee64d013e4f39015f04f8849fc7bc",
+                "img": "./assets/NosPacks/8.jpg",
+                "name": "Pack 6",
+                "props": [
+                    "Poissons grandes tailles : El Dorado,Poijot Royale (7kg)",
+                    "Demi mouton",
+                    "Salade royale",
+                    "la limonade",
+                    "Dessert Variable",
+                    "De la glace",
+                    "Friandises salés"
+                ],
+                "price": "7.000",
+                "old_price": "7.500"
+            },
+            {
+                "id": "711ee64d013e4f39015f04f8849fc7bc",
+                "img": "./assets/NosPacks/8.jpg",
+                "name": "Pack 7",
+                "props": [
+                    "Pastilla fruit de mer avec pastilla d'amande sucré(les deux au meme temps sur table)",
+                    "Saumon",
+                    "Demi mouton grille",
+                    "Poulet bldi",
+                    "5 poules",
+                    "De la limonade",
+                    "Un dessert variant"
+                ],
+                "price": "8.000",
+                "old_price": "8.500"
+            }
+        ]
+    },
+    {
+        "pack a": [
+            {
+                "id": "711ee64d013e4f39015f04f8849fc7bc",
+                "img": "./assets/NosPacks/8.jpg",
+                "name": "Pack L3rssan",
+                "props": [
+                    "TABLES COMPRENANT : BUFFET / DÉCORATION",
+                    "ET INSTALLATION",
+                    "wedding cakes",
+                    "Sablé personnalisé",
+                    "Hanne",
+                    "Sujet dragée",
+                    "Macaron",
+                    "Dates majhoul",
+                    "Chocolate"
+                ],
+                "price": "6.770",
+                "old_price": "7.000"
+            },
+            {
+                "id": "2937d36084d14d6e40d0d478d2e82aff",
+                "img": "./assets/NosPacks/8.jpg",
+                "name": "Pack L3rssan",
+                "props": [
+                    "TABLES COMPRENANT : BUFFET / DÉCORATION",
+                    "ET INSTALLATION",
+                    "wedding cakes",
+                    "Sablé personnalisé",
+                    "Hanne",
+                    "Sujet dragée",
+                    "Macaron",
+                    "Dates majhoul",
+                    "Chocolate"
+                ],
+                "price": "6.770",
+                "old_price": "7.000"
+            },
+            {
+                "id": "2937d36084d14d6e40d0d478d2e82aff",
+                "img": "./assets/NosPacks/8.jpg",
+                "name": "Pack L3rssan",
+                "props": [
+                    "TABLES COMPRENANT : BUFFET / DÉCORATION",
+                    "ET INSTALLATION",
+                    "wedding cakes",
+                    "Sablé personnalisé",
+                    "Hanne",
+                    "Sujet dragée",
+                    "Macaron",
+                    "Dates majhoul",
+                    "Chocolate"
+                ],
+                "price": "6.770",
+                "old_price": "7.000"
+            },
+            {
+                "id": "2937d36084d14d6e40d0d478d2e82aff",
+                "img": "./assets/NosPacks/8.jpg",
+                "name": "Pack L3rssan",
+                "props": [
+                    "TABLES COMPRENANT : BUFFET / DÉCORATION",
+                    "ET INSTALLATION",
+                    "wedding cakes",
+                    "Sablé personnalisé",
+                    "Hanne",
+                    "Sujet dragée",
+                    "Macaron",
+                    "Dates majhoul",
+                    "Chocolate"
+                ],
+                "price": "6.770",
+                "old_price": "7.000"
+            },
+            {
+                "id": "2937d36084d14d6e40d0d478d2e82aff",
+                "img": "./assets/NosPacks/8.jpg",
+                "name": "Pack L3rssan",
+                "props": [
+                    "TABLES COMPRENANT : BUFFET / DÉCORATION",
+                    "ET INSTALLATION",
+                    "wedding cakes",
+                    "Sablé personnalisé",
+                    "Hanne",
+                    "Sujet dragée",
+                    "Macaron",
+                    "Dates majhoul",
+                    "Chocolate"
+                ],
+                "price": "6.770",
+                "old_price": "7.000"
+            }
+        ]
+    }
+]

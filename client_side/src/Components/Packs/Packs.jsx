@@ -13,7 +13,7 @@ const Packs = () => {
     useEffect(() => {
         setTimeout(() => {
             setLoading(false);
-        }, 3000);
+        }, 1500);
     }, [])
 
 
@@ -43,41 +43,28 @@ const Packs = () => {
 
                     <section>
 
-                        <div className="section-packs">
-                            <h2>Découvrez <span>Nos</span> Packs</h2>
-
-
-
-                            <div className="packs-continer">
-
-                                {packs.pack1.map((pack, index) => (
-                                    <div key={index} className="pack">
-                                        <img src={pack.img} alt={pack.name} />
-
-
-                                        <div className='body-pack'>
-                                            <h3>{pack.name}</h3>
-
-                                            <ul>
-                                                {pack.props.map((prop, index) => <li key={index}>{prop}</li>)}
-                                                <hr />
-                                            </ul>
-
-                                            <h3>À partir de - <span>{pack.price} Dhs</span> {pack.old_price ? <del>{pack.old_price} Dhs</del> : ''}</h3>
-
-                                            <a href={`/reserve/${pack.id}`}>Reserver</a>
+                        {Object.entries(packs).map(([full, packList], index) => (
+                            <div key={index} className="section-packs">
+                                <h2>Découvrez <span>{full}</span> Packs</h2>
+                                <div className="packs-continer">
+                                    {packList.map((pack, index) => (
+                                        <div key={index} className="pack">
+                                            <img src={pack.img} alt={pack.name} />
+                                            <div className='body-pack'>
+                                                <h3>{pack.name}</h3>
+                                                <ul>
+                                                    {pack.props.map((prop, index) => <li key={index}>{prop}</li>)}
+                                                    <hr />
+                                                </ul>
+                                                <h3>À partir de - <span>{pack.price} Dhs</span> {pack.old_price ? <del>{pack.old_price} Dhs</del> : ''}</h3>
+                                                <a href={`/reserve/${pack.id}`}>Reserver</a>
+                                            </div>
                                         </div>
-                                    </div>
-                                ))}
-
-
-
-
+                                    ))}
+                                </div>
                             </div>
-                        </div>
-
-
-                        <div className="section-packs">
+                        ))}
+                        {/* <div className="section-packs">
                             <h2>Découvrez <span>Nos</span> Packs</h2>
 
 
@@ -108,17 +95,17 @@ const Packs = () => {
 
 
                             </div>
-                        </div>
+                        </div> */}
 
                     </section>
 
 
-                </div>
+                </div >
 
 
 
                 <Footer />
-            </div>
+            </div >
     )
 }
 

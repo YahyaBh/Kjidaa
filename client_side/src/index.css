@@ -39,6 +39,12 @@
 
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 40px #824393 inset !important;
+}
 
 * {
   margin: 0;
@@ -60,7 +66,7 @@ body {
     display: none;
   }
 
-  
+
 
   /* Hide scrollbar for IE, Edge and Firefox */
   body {

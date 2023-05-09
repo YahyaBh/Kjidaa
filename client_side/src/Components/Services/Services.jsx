@@ -7,10 +7,14 @@ import Slider from "@mui/material/Slider";
 import { AiOutlineInsertRowAbove } from 'react-icons/ai'
 import Loading from "../../Layouts/Loading/Loading";
 import cookie from "cookies-js";
+import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
 
 
 // eslint-disable-next-line react/prop-types
 const Services = () => {
+
+    const navigate = useNavigate()
 
     const [loading, setLoading] = useState(true);
     const [animat, setAnimat] = useState(false);
@@ -34,7 +38,7 @@ const Services = () => {
         fetchProducts();
         setTimeout(() => {
             setLoading(false);
-        }, 3000);
+        }, 1500);
     }, []);
 
     useEffect(() => {
@@ -92,10 +96,9 @@ const Services = () => {
         const existingProduct = productsArray.find(product => product.name === newProduct.name);
 
         if (existingProduct) {
-            // If product already exists, update the quantity
             existingProduct.quantity += newProduct.quantity;
+            existingProduct.price += newProduct.price;
         } else {
-            // If product does not exist, add it to the array
             productsArray.push(newProduct);
         }
 
@@ -104,7 +107,17 @@ const Services = () => {
         cookie.set('products', updatedValue);
 
 
-        alert(`${product.quantity ? product.quantity : 1} service ${product.name} a été ajouté avec succès`);
+        Swal.fire({
+            title: `${product.quantity ? product.quantity : 1} service , ${product.name} a été ajouté avec succès`,
+            showCancelButton: true,
+            showConfirmButton: true,
+            confirmButtonColor: '#000'
+        })
+            .then(res => {
+                if (res.isConfirmed) {
+                    navigate('/reservation', { replace: true });
+                }
+            })
     }
 
 
@@ -199,17 +212,21 @@ const Services = () => {
                                     </div>
                                 )) : <div><h3 style={{ fontSize: '40px', textAlign: 'center', color: '#000' }}>No Products Available</h3></div>}
 
-                                {filteredProducts.length > 0 && (
-                                    <div className="pagination">
-                                        {pageNumber.map((number) => (
-                                            <button key={number} className={currentPage === number ? `button-selected` : ''} onClick={e => handlePageChange(e, number)}>
-                                                {number}
-                                            </button>
-                                        ))}
-                                    </div>
-                                )}
+
                             </div>
+
+                            {filteredProducts.length > 0 && (
+                            <div className="pagination">
+                                {pageNumber.map((number) => (
+                                    <button key={number} className={currentPage === number ? `button-selected` : ''} onClick={e => handlePageChange(e, number)}>
+                                        {number}
+                                    </button>
+                                ))}
+                            </div>
+                        )}
                         </section>
+
+                        
                     </div>
 
                 </div>
