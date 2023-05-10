@@ -108,92 +108,60 @@
             {
                 "id": "711ee64d013e4f39015f04f8849fc7bc",
                 "img": "./assets/NosPacks/8.jpg",
-                "name": "Pack L3rssan",
+                "name": "Pack Anniversaire",
                 "props": [
-                    "TABLES COMPRENANT : BUFFET / DÉCORATION",
-                    "ET INSTALLATION",
-                    "wedding cakes",
-                    "Sablé personnalisé",
-                    "Hanne",
-                    "Sujet dragée",
-                    "Macaron",
-                    "Dates majhoul",
-                    "Chocolate"
+                    "1 Invite pour 150dh",
+                    "150dh Minimum (20)",
+                    "les salles",
+                    "Friandises salés et sucrés avec des jus",
+                    "une tarte d’anniversaire en pate d’amande"
                 ],
-                "price": "6.770",
-                "old_price": "7.000"
+                "price": "3.000 (minimum)",
+                "old_price": "3.790"
+            }
+        ]
+    },
+    {
+        "Pack Petite Dejeune": [
+            {
+                "id": "711ee64d013e4f39015f04f8849fc7bc",
+                "img": "./assets/NosPacks/8.jpg",
+                "name": "Petit Dejeuner complet",
+                "props": [
+                    "Omlette avec une soupe",
+                    "un boisson chaud",
+                    "des olives",
+                    "Jus d’orange",
+                    "L’huile et un yaourt"
+                ],
+                "price": "25",
+                "old_price": "35"
             },
             {
-                "id": "2937d36084d14d6e40d0d478d2e82aff",
+                "id": "711ee64d013e4f39015f04f8849fc7bc",
                 "img": "./assets/NosPacks/8.jpg",
-                "name": "Pack L3rssan",
+                "name": "Petit Dejeuner Beldi",
                 "props": [
-                    "TABLES COMPRENANT : BUFFET / DÉCORATION",
-                    "ET INSTALLATION",
-                    "wedding cakes",
-                    "Sablé personnalisé",
-                    "Hanne",
-                    "Sujet dragée",
-                    "Macaron",
-                    "Dates majhoul",
-                    "Chocolate"
+                    "Mlwi",
+                    "Hrcha",
+                    "Boisson chaud",
+                    "jus d’orange"
                 ],
-                "price": "6.770",
-                "old_price": "7.000"
+                "price": "25",
+                "old_price": "35"
             },
             {
-                "id": "2937d36084d14d6e40d0d478d2e82aff",
+                "id": "711ee64d013e4f39015f04f8849fc7bc",
                 "img": "./assets/NosPacks/8.jpg",
-                "name": "Pack L3rssan",
+                "name": "Petit dejeuner Parisiern",
                 "props": [
-                    "TABLES COMPRENANT : BUFFET / DÉCORATION",
-                    "ET INSTALLATION",
-                    "wedding cakes",
-                    "Sablé personnalisé",
-                    "Hanne",
-                    "Sujet dragée",
-                    "Macaron",
-                    "Dates majhoul",
-                    "Chocolate"
+                    "Boissons chauds",
+                    "Chneks",
+                    "Croissants",
+                    "Jus d’orange"
                 ],
-                "price": "6.770",
-                "old_price": "7.000"
-            },
-            {
-                "id": "2937d36084d14d6e40d0d478d2e82aff",
-                "img": "./assets/NosPacks/8.jpg",
-                "name": "Pack L3rssan",
-                "props": [
-                    "TABLES COMPRENANT : BUFFET / DÉCORATION",
-                    "ET INSTALLATION",
-                    "wedding cakes",
-                    "Sablé personnalisé",
-                    "Hanne",
-                    "Sujet dragée",
-                    "Macaron",
-                    "Dates majhoul",
-                    "Chocolate"
-                ],
-                "price": "6.770",
-                "old_price": "7.000"
-            },
-            {
-                "id": "2937d36084d14d6e40d0d478d2e82aff",
-                "img": "./assets/NosPacks/8.jpg",
-                "name": "Pack L3rssan",
-                "props": [
-                    "TABLES COMPRENANT : BUFFET / DÉCORATION",
-                    "ET INSTALLATION",
-                    "wedding cakes",
-                    "Sablé personnalisé",
-                    "Hanne",
-                    "Sujet dragée",
-                    "Macaron",
-                    "Dates majhoul",
-                    "Chocolate"
-                ],
-                "price": "6.770",
-                "old_price": "7.000"
+                "price": "20",
+                "old_price": "30"
             }
         ]
     }

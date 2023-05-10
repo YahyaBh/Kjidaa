@@ -2,14 +2,13 @@ import { useEffect, useState } from "react";
 import Navbar from "../Navbar/Navbar"
 import Footer from "../Footer/Footer"
 import './Services.scss'
-import axios from "axios";
 import Slider from "@mui/material/Slider";
 import { AiOutlineInsertRowAbove } from 'react-icons/ai'
 import Loading from "../../Layouts/Loading/Loading";
 import cookie from "cookies-js";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
-
+import ServicesData from '../../assets/API/Services.json'
 
 // eslint-disable-next-line react/prop-types
 const Services = () => {
@@ -18,18 +17,18 @@ const Services = () => {
 
     const [loading, setLoading] = useState(true);
     const [animat, setAnimat] = useState(false);
-    const [products, setProducts] = useState([{ name: '1/2 Méchoui d’agneau', price: 1000 }, { name: '1/2 Méchoui d’agneau', price: 600 }, { name: '1/2 Méchoui d’agneau', price: 100 }, { name: '1/2 Méchoui d’agneau', price: 500 }, { name: '1/2 Méchoui d’agneau', price: 2000 }, { name: '1/2 Méchoui d’agneau', price: 4000 }, { name: '1/2 Méchoui d’agneau', price: 1000 }, { name: '1/2 Méchoui d’agneau', price: 600 }, { name: '1/2 Méchoui d’agneau', price: 100 }, { name: '1/2 Méchoui d’agneau', price: 500 }, { name: '1/2 Méchoui d’agneau', price: 2000 }, { name: '1/2 Méchoui d’agneau', price: 4000 }, { name: '1/2 Méchoui d’agneau', price: 1000 }, { name: '1/2 Méchoui d’agneau', price: 600 }, { name: '1/2 Méchoui d’agneau', price: 100 }, { name: '1/2 Méchoui d’agneau', price: 500 }, { name: '1/2 Méchoui d’agneau', price: 2000 }, { name: '1/2 Méchoui d’agneau', price: 4000 }, { name: '1/2 Méchoui d’agneau', price: 1000 }, { name: '1/2 Méchoui d’agneau', price: 600 }, { name: '1/2 Méchoui d’agneau', price: 100 }, { name: '1/2 Méchoui d’agneau', price: 500 }, { name: '1/2 Méchoui d’agneau', price: 2000 }, { name: '1/2 Méchoui d’agneau', price: 4000 }, { name: '1/2 Méchoui d’agneau', price: 1000 }, { name: '1/2 Méchoui d’agneau', price: 600 }, { name: '1/2 Méchoui d’agneau', price: 100 }, { name: '1/2 Méchoui d’agneau', price: 500 }, { name: '1/2 Méchoui d’agneau', price: 2000 }, { name: '1/2 Méchoui d’agneau', price: 4000 }]);
+    const [products, setProducts] = useState(null);
     const [filteredProducts, setFilteredProducts] = useState([]);
     const [priceRange, setPriceRange] = useState([0, 2000]);
     const [currentPage, setCurrentPage] = useState(1);
 
 
     const productsPerPage = 9;
-    const totalProducts = filteredProducts.length;
+    const totalProducts = filteredProducts?.length;
     const totalPages = Math.ceil(totalProducts / productsPerPage);
     const indexOfLastProduct = currentPage * productsPerPage;
     const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
-    const currentProducts = filteredProducts.slice(
+    const currentProducts = filteredProducts?.slice(
         indexOfFirstProduct,
         indexOfLastProduct
     );
@@ -44,7 +43,7 @@ const Services = () => {
     useEffect(() => {
         setAnimat(true);
         setFilteredProducts(
-            products.filter(
+            products?.filter(
                 (product) => product.price >= priceRange[0] && product.price <= priceRange[1]
             )
         );
@@ -54,9 +53,7 @@ const Services = () => {
     }, [products, priceRange]);
 
     const fetchProducts = async () => {
-        axios.get("/api/products").then((res) => {
-            setProducts(res.data);
-        });
+        setProducts(ServicesData);
     };
 
 
@@ -190,10 +187,7 @@ const Services = () => {
                                 </div>
                                 <div className="order-by">
                                     <select name="order_by" id="order_by" >
-                                        <option value="low-to-high">Newest</option>
                                         <option value="low-to-high">Popular</option>
-                                        <option value="low-to-high">Low Price To High</option>
-                                        <option value="low-to-high">High Price To Low</option>
                                     </select>
                                     <div className="select_arrow">
                                     </div>
@@ -201,9 +195,9 @@ const Services = () => {
                             </div>
 
                             <div className="products-container" >
-                                {filteredProducts.length > 0 ? currentProducts.map((product, index) => (
-                                    <div data-aos="fade-right" data-aos-duration={index + "00"} key={index} className={`single-product ${animat ? 'animat-cards' : ''}`} >
-                                        <img src="./Images_public/Carousel/8.jpg" alt={product.name} />
+                                {filteredProducts?.length > 0 ? currentProducts.map((product, index) => (
+                                    <div data-aos-duration={index + "00"} key={index} className={`single-product ${animat ? 'animat-cards' : ''}`} >
+                                        <img src={product.image} alt={product.name} />
                                         <div className="body">
                                             <h3>{product.name}</h3>
                                             <p>{product.price} Dhs</p>
@@ -215,8 +209,8 @@ const Services = () => {
 
                             </div>
 
-                            {filteredProducts.length > 0 && (
-                            <div data-aos="fade-down" className="pagination">
+                            {filteredProducts?.length > 0 && (
+                            <div className="pagination">
                                 {pageNumber.map((number) => (
                                     <button key={number} className={currentPage === number ? `button-selected` : ''} onClick={e => handlePageChange(e, number)}>
                                         {number}

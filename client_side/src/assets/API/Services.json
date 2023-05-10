@@ -1,12 +1,86 @@
 [
     {
-        "name" : "Salade",
-        "price" : 200,
-        "description" : "Salade tres bon"
+        "image": "./Images_public/Images_services/MainCar.jpg",
+        "name": "Gâteau Régulier",
+        "price": 100,
+        "description": "Un délicieux dessert composé d'une combinaison de farine, de sucre, d'œufs, de beurre ou d'huile et de divers arômes",
+        "category": "Les Gâteaux"
     },
     {
-        "name" : "Salade",
-        "price" : 200,
-        "description" : "Salade tres bon"
+        "image": "./Images_services/",
+        "name": "Gâteau au chocolat",
+        "price": 100,
+        "description": "Est un dessert délicieux qui ravit les sens avec sa saveur riche et décadente.",
+        "category": "Les Gâteaux"
+    },
+    {
+        "image": "./Images_services/",
+        "name": "Gâteau Aux Pommes",
+        "price": 100,
+        "description": "dessert qui combine la douceur et l'acidité naturelles des pommes avec une pâte à gâteau moelleuse et moelleuse.",
+        "category": "Les Gâteaux"
+    },
+    {
+        "image": "./Images_services/",
+        "name": "Gâteau bsboussa",
+        "price": 100,
+        "description": "dessert incroyablement moelleux, sucré et aromatique.",
+        "category": "Les Gâteaux"
+    },
+    {
+        "image": "./Images_services/",
+        "name": "Gâteau aux fruits secs",
+        "price": 100,
+        "description": "Est un dessert délicieux qui incorpore divers types de noix dans la pâte,",
+        "category": "Les Gâteaux"
+    },
+    {
+        "image": "./Images_services/",
+        "name": "Mlikshake au Chocolat",
+        "price": 25,
+        "description": "est une boisson délicieuse et gourmande composée d'une combinaison de lait, de crème glacée et d'arômes de chocolat.",
+        "category": "MilkShakes"
+    },
+    {
+        "image": "./Images_services/",
+        "name": "MilkShake aux fraises",
+        "price": 25,
+        "description": "est une boisson rafraîchissante et indulgente qui combine les bienfaits crémeux du lait avec la douceur vibrante des fraises fraîches",
+        "category": "MilkShakes"
+    },
+    {
+        "image": "./Images_services/",
+        "name": "MilkShake aux pistaches",
+        "price": 25,
+        "description": "une boisson crémeuse et gourmande qui allie la saveur unique et la richesse des pistaches à l'onctuosité du lait et de la crème glacée.",
+        "category": "MilkShakes"
+    },
+    {
+        "image": "./Images_services/",
+        "name": "Jus d'orange",
+        "price": 22,
+        "description": "est une boisson rafraîchissante et acidulée à base de jus d'oranges",
+        "category": "les jus"
+    },
+    {
+        "image": "./Images_services/",
+        "name": "Jus D'avocat",
+        "price": 22,
+        "description": "is a refreshing and creamy beverage made from ripe avocados.",
+        "category": "les jus"
+    },
+    {
+        "image": "./Images_services/",
+        "name": "Jus de citron",
+        "price": 22,
+        "description": "est une boisson acidulée et rafraîchissante préparée à partir du jus extrait des citrons.",
+        "category": "les jus"
+    },
+    {
+        "image": "./Images_services/",
+        "name": "Chocolat chaud",
+        "price": 20,
+        "description": "Le chocolat chaud est une boisson réconfortante et délicieuse qui réchauffe les cœurs par temps froid..",
+        "category": "les boissons chauds"
     }
 ]

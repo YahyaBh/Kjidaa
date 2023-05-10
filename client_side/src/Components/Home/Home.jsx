@@ -214,25 +214,8 @@ const Home = () => {
                     data-aos="zoom-in"
                 >
                     <SwiperSlide className="swiper-container">
-                        {/* <div className="image-container-swiper">
-                            <img src={ImagePack} alt="image-pack" />
-
-                            <h3>Asumez-vous maintenant</h3>
-                        </div> */}
                     </SwiperSlide>
                     <SwiperSlide className="swiper-container">
-                        {/* <div className="image-container-swiper">
-                            <img src={ImagePack} alt="image-pack" />
-
-                            <h3>Asumez-vous maintenant</h3>
-                        </div> */}
-                    </SwiperSlide>
-                    <SwiperSlide className="swiper-container">
-                        {/* <div className="image-container-swiper">
-                            <img src={ImagePack} alt="image-pack" />
-
-                            <h3>Asumez-vous maintenant</h3>
-                        </div> */}
                     </SwiperSlide>
                 </Swiper>
 
