@@ -9,6 +9,7 @@ import Packs from './Components/Packs/Packs';
 import NotFound from './Error/NotFound/NotFound';
 import Reservation from './Components/Reservation/Reservation';
 import About from './Components/About/About';
+import Contact from './Components/Contact/Contact';
 
 
 function App() {
@@ -31,8 +32,10 @@ function App() {
         <Route path='/nos-packs' element={<Packs />} exact />
         <Route path='/reservation' element={<Reservation />} exact />
         <Route path='/a-propos' element={<About />} exact />
-        {/* <Route path='/blogs' element={<Packs />} exact />
-        <Route path='/contact' element={<Packs />} exact /> */}
+        <Route path='/contact' element={<Contact />} exact />
+
+        
+        {/*// <Route path='/contact' element={<Packs />} exact /> */}
 
 
         <Route path='*' element={<NotFound />} exact />
