@@ -130,16 +130,17 @@ const Reservation = () => {
 
                             <div className="products-table">
                                 <table className="rwd-table">
+                                    <tr>
+                                        <th></th>
+                                        <th>Produit</th>
+                                        <th>Quantity</th>
+                                        <th>Prix</th>
+                                    </tr>
                                     {Cookies.get('products') ?
                                         order?.map((product, index) =>
                                         (
                                             <>
-                                                <tr>
-                                                    <th></th>
-                                                    <th>Produit</th>
-                                                    <th>Quantity</th>
-                                                    <th>Prix</th>
-                                                </tr>
+
                                                 <tr data-aos="fade-right" key={index}>
                                                     <td className="delete" onClick={e => deleteItem(product)}><TiDelete /></td>
                                                     <td >{product.name}</td>
@@ -153,7 +154,10 @@ const Reservation = () => {
                                         (<h2 style={{ textAlign: 'center', padding: '20px' }}>Rien produits dans votre panier <br /> <FaOpencart style={{ fontSize: '40px', marginTop: '40px' }} /> <br /> <a href="/nos-service">Nos Services</a></h2>)
                                     }
 
+
+
                                 </table>
+                                <hr />
                             </div>
 
 
