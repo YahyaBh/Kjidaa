@@ -52,7 +52,7 @@ const Reservation = () => {
         loading ?
             <Loading />
             :
-            <Fragment>
+            <div id="reserve">
 
 
                 <Navbar target={'reservation'} />
@@ -91,13 +91,13 @@ const Reservation = () => {
                     <section>
                         <form method="GET">
 
-                            <input type="text" name="name" id="name" maxLength={20} minLength={4} placeholder="Nom*" onChange={e => setName(e.target.value)} required />
+                            <input data-aos="fade-right" type="text" name="name" id="name" maxLength={20} minLength={4} placeholder="Nom*" onChange={e => setName(e.target.value)} required />
 
-                            <input type="tel" name="phone" id="phone" maxLength={16} minLength={8} placeholder="Tel*" onChange={e => setPhone(e.target.value)} required />
+                            <input data-aos="fade-right" type="tel" name="phone" id="phone" maxLength={16} minLength={8} placeholder="Tel*" onChange={e => setPhone(e.target.value)} required />
 
-                            <div className="select">
+                            <div data-aos="fade-right" className="select">
                                 <select name="city" id="city" placeholder="Ville*" onChange={e => setCity(e.target.value)} required>
-                                    <option defaultChecked>Choisez voter</option>
+                                    <option defaultChecked>Choisez votre ville</option>
                                     <option value="Agadir">Agadir</option>
                                     <option value="Al Hoceima">Al Hoceima</option>
                                     <option value="Beni Mellal">Beni Mellal</option>
@@ -140,7 +140,7 @@ const Reservation = () => {
                                                     <th>Quantity</th>
                                                     <th>Prix</th>
                                                 </tr>
-                                                <tr key={index}>
+                                                <tr data-aos="fade-right" key={index}>
                                                     <td className="delete" onClick={e => deleteItem(product)}><TiDelete /></td>
                                                     <td >{product.name}</td>
                                                     <td >{product.quantity}</td>
@@ -168,7 +168,7 @@ const Reservation = () => {
 
 
                 <Footer />
-            </Fragment>
+            </div>
     )
 }
 

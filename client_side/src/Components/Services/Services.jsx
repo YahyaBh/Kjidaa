@@ -125,7 +125,7 @@ const Services = () => {
         loading ?
             <Loading />
             :
-            <div>
+            <div id="services">
 
 
                 <Navbar target={'nos-service'} />
@@ -156,7 +156,7 @@ const Services = () => {
                                     <h4>Prix : {products.reduce((prev, cur) => (cur.price < prev.price ? cur : prev)).price} Dhs - {products.reduce((prev, cur) => (cur.price > prev.price ? cur : prev)).price} Dhs</h4>
                                 </div>
 
-                                <div className="category-products">
+                                <div data-aos="fade-down" className="category-products">
                                     <h3>Catégories des produits</h3>
                                     <ul>
                                         <li>My Bio Alimentaire</li>
@@ -202,7 +202,7 @@ const Services = () => {
 
                             <div className="products-container" >
                                 {filteredProducts.length > 0 ? currentProducts.map((product, index) => (
-                                    <div key={index} className={`single-product ${animat ? 'animat-cards' : ''}`} >
+                                    <div data-aos="fade-right" data-aos-duration={index + "00"} key={index} className={`single-product ${animat ? 'animat-cards' : ''}`} >
                                         <img src="./Images_public/Carousel/8.jpg" alt={product.name} />
                                         <div className="body">
                                             <h3>{product.name}</h3>
@@ -216,7 +216,7 @@ const Services = () => {
                             </div>
 
                             {filteredProducts.length > 0 && (
-                            <div className="pagination">
+                            <div data-aos="fade-down" className="pagination">
                                 {pageNumber.map((number) => (
                                     <button key={number} className={currentPage === number ? `button-selected` : ''} onClick={e => handlePageChange(e, number)}>
                                         {number}

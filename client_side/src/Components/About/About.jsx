@@ -28,7 +28,7 @@ const About = () => {
         loading ?
             <Loading />
             :
-            <div>
+            <div id="about">
 
 
                 <Navbar target={'a-propos'} />
@@ -66,13 +66,13 @@ const About = () => {
 
                 <section>
 
-                    <div className="sec-section">
+                    <div  className="sec-section">
                         <h2>NOTRE RAISON D'ÊTRE, NOS VALEURS ET NOTRE VISION.</h2>
 
                         <div className="a-propos-cont">
-                            <img src={Logo} alt="A-Propos-Logo" />
+                            <img data-aos="fade-right" src={Logo} alt="A-Propos-Logo" />
 
-                            <div className="text-cont">
+                            <div data-aos="fade-left" className="text-cont">
                                 <h3>PREMIER TRAITEUR EN LIGNE AU MAROC</h3>
 
                                 <p>Nous répondons avec empressement aux demandes privées et corporatives quel que soit l’importance de votre évènement.
@@ -86,7 +86,7 @@ const About = () => {
 
                         <div className="a-propos-cont">
 
-                            <div className="text-cont">
+                            <div data-aos="fade-left" className="text-cont">
                                 <h3>MY TRAITEUR À VOTRE SERVICE</h3>
 
                                 <p>Organiser un évènement gourmand demande beaucoup d’efforts. Comme c’est notre spécialité,
@@ -97,15 +97,15 @@ const About = () => {
                                     pour vous offrir ce qu’il y a de mieux selon le concept que vous aurez choisi. Faites-nous confiance : on s’occupe de tout !</p>
                             </div>
 
-                            <img src={Place} alt="A-Propos-place" />
+                            <img data-aos="fade-right" src={Place} alt="A-Propos-place" />
 
                         </div>
 
 
                         <div className="a-propos-cont">
-                            <img src={DishesPic} alt="Dishes" />
+                            <img data-aos="fade-right" src={DishesPic} alt="Dishes" />
 
-                            <div className="text-cont">
+                            <div data-aos="fade-left" className="text-cont">
                                 <h3>LA QUALITÉ EST À MOITIÉ</h3>
 
                                 <p>Organiser un évènement gourmand demande beaucoup d’efforts. Comme c’est notre spécialité, n’hésitez pas à déléguer : nous serons ravis de prendre
@@ -118,7 +118,7 @@ const About = () => {
 
                         <div className="a-propos-cont">
 
-                            <div className="text-cont">
+                            <div data-aos="fade-left" className="text-cont">
                                 <h3>LIVRAISON A DOMICILE</h3>
 
                                 <p>Notre équipe se chargera de la livraison des commandes à Agadir et dans les environs. Notre personnel de cuisine et de service est également à votre entière disposition pour s’assurer que tout se déroulera dans les règles de l’art et que vos convives soient traités aux petits soins.
@@ -126,7 +126,7 @@ const About = () => {
                                     Quelle que soit occasion, My Traiteur s’adaptera pour vous offrir ce qu’il y a de mieux selon le concept que vous aurez choisi. Faites-nous confiance : on s’occupe de tout !</p>
                             </div>
 
-                            <img src={AboutPic} alt="About" />
+                            <img data-aos="fade-right" src={AboutPic} alt="About" />
 
                         </div>
                     </div>

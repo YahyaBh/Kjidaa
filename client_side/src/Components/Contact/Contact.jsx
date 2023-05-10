@@ -10,7 +10,7 @@ import Footer from "../Footer/Footer";
 
 const Contact = () => {
     return (
-        <div>
+        <div id="contact">
 
             <Navbar target={'contact'} />
 
@@ -56,7 +56,7 @@ const Contact = () => {
 
             <section className="conta">
 
-                <div className="sing">
+                <a data-aos="fade-down" href="https://goo.gl/maps/AerEcyskXLhXhGqp7" className="sing">
                     <div className="cycle-top">
                         <BsFillHouseDoorFill />
                     </div>
@@ -64,9 +64,9 @@ const Contact = () => {
                         <h3>Adresse</h3>
                         <h5>N°755 Rue Tamada <br /> HayRue Adrar,<br /> Agadir 80650</h5>
                     </div>
-                </div>
+                </a>
 
-                <div href="tel:+212667667153" className="sing">
+                <a data-aos="fade-down" href="tel:+212667667153" className="sing">
                     <div className="cycle-top">
                         <BsFillTelephoneFill />
                     </div>
@@ -75,9 +75,9 @@ const Contact = () => {
                         <h5>+212 667-667153</h5>
                         <h5>+212 661-374817</h5>
                     </div>
-                </div>
+                </a>
 
-                <a href="mailto:kjidaa@gmail.com" className="sing">
+                <a data-aos="fade-down" href="mailto:kjidaa@gmail.com" className="sing">
                     <div className="cycle-top">
                         <AiFillMail />
                     </div>

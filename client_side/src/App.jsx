@@ -18,7 +18,6 @@ function App() {
     Aos.init({
       once: true
     })
-
   }, [])
 
   return (
@@ -34,7 +33,7 @@ function App() {
         <Route path='/a-propos' element={<About />} exact />
         <Route path='/contact' element={<Contact />} exact />
 
-        
+
         {/*// <Route path='/contact' element={<Packs />} exact /> */}
 
 

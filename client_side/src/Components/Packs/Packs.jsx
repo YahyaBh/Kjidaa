@@ -21,7 +21,7 @@ const Packs = () => {
         loading ?
             <Loading />
             :
-            <div>
+            <div id='packs'>
 
 
                 <Navbar target={'nos-packs'} />
@@ -29,11 +29,11 @@ const Packs = () => {
 
                 <div className='nos-packs'>
                     <header>
-                        <h2>Nos Packs</h2>
-                        <p>Meilleur sevice dans le <span>maroc</span></p>
+                        <h2 data-aos="fade-right">Nos Packs</h2>
+                        <p data-aos="fade-left">Meilleur sevice dans le <span>maroc</span></p>
 
 
-                        <div className="scroll-downs">
+                        <div data-aos="fade-down" className="scroll-downs">
                             <div className="mousey">
                                 <div className="scroller"></div>
                             </div>
@@ -48,7 +48,7 @@ const Packs = () => {
                             const packItems = pack[packName];
                             return (
 
-                                <div key={index} className="section-packs">
+                                <div data-aos="fade-down" key={index} className="section-packs">
                                     <h2>Découvrez <span>{packName}</span> Packs</h2>
                                     <div className="packs-continer">
                                         {packItems.map((pack, index) => (

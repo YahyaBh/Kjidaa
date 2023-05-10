@@ -3,7 +3,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "./Home.scss";
 import { Navigation, Pagination, Autoplay } from "swiper";
-import ImagePack from '../../assets/Images/Home/Carousel/8.jpg';
+import ImagePack from '../../assets/Images/Home/Carousel/MainCar.jpg';
 import Footer from "../Footer/Footer";
 import { RiWhatsappFill } from 'react-icons/ri'
 import Navbar from "../Navbar/Navbar";
@@ -28,7 +28,7 @@ const Home = () => {
         loading ?
             <Loading />
             :
-            <div>
+            <div id="Home">
                 <Navbar target='home' data-aos="fade-down" />
 
                 <header>
@@ -333,12 +333,12 @@ const Home = () => {
 
 
 
-                <section className="small-section-res" id="small-section-res">
-                    <h2>Laissez parler votre imagination
+                <section  className="small-section-res" id="small-section-res">
+                    <h2 data-aos="fade-right">Laissez parler votre imagination
                         Nous allons la réaliser</h2>
 
 
-                    <button>Demander un devis</button>
+                    <button data-aos="fade-down">Demander un devis</button>
                 </section>
 
 
@@ -375,7 +375,7 @@ const Home = () => {
                 </section>
 
 
-                <a href="https://wa.me/+212665845124" target="blank" className="whatsapp-bubble">
+                <a data-aos="fade-down" href="https://wa.me/+212665845124" target="blank" className="whatsapp-bubble">
                     <RiWhatsappFill />
                 </a>
 
