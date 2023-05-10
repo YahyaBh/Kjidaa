@@ -2,7 +2,7 @@
     header {
         .swiper {
             width: 100%;
-            height: 80vh;
+            height: 100dvh;
             color: #000;
 
             @media screen and (max-width: 900px) {
@@ -29,7 +29,7 @@
 
         .carousel-swiper {
             .swiper-container {
-                background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./Images_public/Carousel/8.jpg);
+                background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(./Images_public/Contact/waiter-uniform-holding-metal-tray_23-2148245001-vcXFzZpHH-transformed.jpeg);
                 background-size: cover;
                 background-clip: border-box;
                 background-position: center;
@@ -38,12 +38,12 @@
             }
 
             .swiper-container:nth-child(2) {
-                background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
                     url(./Images_public/Carousel/Image1Slide.jpg);
             }
 
             .swiper-container:nth-child(2) {
-                background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
                     url(./Images_public/Carousel/Image1Slide.jpg);
             }
         }

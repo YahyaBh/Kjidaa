@@ -617,24 +617,38 @@
         }
     }
 
-    .carousel-swiper {
+    .carousel-swiper2 {
         .swiper-container {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(./Images_public/Carousel/8.jpg);
+            background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(108, 65, 119, 0.7)),
+                url(./Images_public/Home/Carousel/SwiperMiddle.jpg);
             background-size: cover;
             background-clip: border-box;
             background-position: center;
             background-attachment: scroll;
             background-repeat: no-repeat;
+            height: 50dvh;
         }
 
         .swiper-container:nth-child(2) {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                url(./Images_public/Carousel/Image1Slide.jpg);
+            background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(108, 65, 119, 0.7)),
+                url(./Images_public/Home/Carousel/SwiperMiddle2.jpg);
+            background-size: cover;
+            background-clip: border-box;
+            background-position: center;
+            background-attachment: scroll;
+            background-repeat: no-repeat;
+            height: 50dvh;
         }
 
-        .swiper-container:nth-child(2) {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                url(./Images_public/Carousel/Image1Slide.jpg);
+        .swiper-container:nth-child(3) {
+            background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(108, 65, 119, 0.7)),
+                url(./Images_public/Home/Carousel/SwiperMiddle2.jpg);
+            background-size: cover;
+            background-clip: border-box;
+            background-position: center;
+            background-attachment: scroll;
+            background-repeat: no-repeat;
+            height: 50dvh;
         }
     }
 
