@@ -146,7 +146,7 @@ const Home = () => {
 
                                 <h3>À partir de - <span>{PackPacks[2]["Pack Petite Dejeune"][0].price}</span> Dhs </h3>
 
-                                <a href="/nos-packs">Reservation</a>
+                                <a href="nos-packs">Reservation</a>
                             </div>
 
                         </div>
@@ -167,7 +167,7 @@ const Home = () => {
 
                                 <h3>À partir de - <span>{PackPacks[0]["Pack laarssan"][0].price}</span> Dhs </h3>
 
-                                <a href="/nos-packs">Reservation</a>
+                                <a href="nos-packs">Reservation</a>
                             </div>
 
                         </div>
@@ -188,7 +188,7 @@ const Home = () => {
 
                                 <h3>À partir de - <span>{PackPacks[1]["Pack anniversaire"][0].price}</span> Dhs </h3>
 
-                                <a href="/nos-packs">Reservation</a>
+                                <a href="nos-packs">Reservation</a>
                             </div>
 
                         </div>
@@ -215,7 +215,7 @@ const Home = () => {
                         </div>
 
 
-                        <a href="/nos-service">Afficher tout</a>
+                        <a href="nos-service">Afficher tout</a>
                     </div>
                 </section>
 

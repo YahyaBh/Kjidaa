@@ -30,7 +30,7 @@
         .carousel-swiper {
             .swiper-container {
                 background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-                    url(./Images_public/Home/Carousel/MainCar.jpg);
+                    url(../../../public/Images_public/Home/Carousel/MainCar.jpg);
                 background-size: cover;
                 background-clip: border-box;
                 background-position: center;
@@ -40,12 +40,12 @@
 
             .swiper-container:nth-child(2) {
                 background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-                    url(./Images_public/Home/Carousel/MainCar2.jpg);
+                    url(../../../public/Images_public/Home/Carousel/MainCar2.jpg);
             }
 
             .swiper-container:nth-child(2) {
                 background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-                    url(./Images_public/Home/Carousel/MainCar3.jpg);
+                    url(../../../public/Images_public/Home/Carousel/MainCar3.jpg);
             }
         }
 
@@ -637,7 +637,7 @@
 
         .swiper-container {
             background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(108, 65, 119, 0.7)),
-                url(./Images_public/Home/Carousel/SwiperMiddle.jpg);
+                url(../../../public/Images_public/Home/Carousel/SwiperMiddle.jpg);
             background-size: cover;
             background-clip: border-box;
             background-position: center;
@@ -648,7 +648,7 @@
 
         .swiper-container:nth-child(2) {
             background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(108, 65, 119, 0.7)),
-                url(./Images_public/Home/Carousel/SwiperMiddle2.jpg);
+                url(../../../public/Images_public/Home/Carousel/SwiperMiddle2.jpg);
             background-size: cover;
             background-clip: border-box;
             background-position: center;
@@ -659,7 +659,7 @@
 
         .swiper-container:nth-child(3) {
             background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(108, 65, 119, 0.7)),
-                url(./Images_public/Home/Carousel/SwiperMiddle2.jpg);
+                url(../../../public/Images_public/Home/Carousel/SwiperMiddle2.jpg);
             background-size: cover;
             background-clip: border-box;
             background-position: center;
