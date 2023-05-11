@@ -18,8 +18,8 @@ const Services = () => {
     const [loading, setLoading] = useState(true);
     const [animat, setAnimat] = useState(false);
     const [products, setProducts] = useState(null);
-    const [filteredProducts, setFilteredProducts] = useState(ServicesData);
-    const [priceRange, setPriceRange] = useState([0, 200]);
+    const [filteredProducts, setFilteredProducts] = useState([]);
+    const [priceRange, setPriceRange] = useState([0, 2000]);
     const [currentPage, setCurrentPage] = useState(1);
     const [currentCategory, setCurrentCategory] = useState('all');
     const [categories, setCategories] = useState([]);
@@ -35,12 +35,23 @@ const Services = () => {
     );
 
     useEffect(() => {
+        fetchProducts();
+        getCategories();
+        setTimeout(() => {
+            setLoading(false);
+        }, 1500);
+    }, []);
+
+    useEffect(() => {
         setAnimat(true);
         setFilteredProducts(
             products?.filter(
                 (product) => product.price >= priceRange[0] && product.price <= priceRange[1]
             )
         );
+
+
+
     }, [products, priceRange]);
 
     useEffect(() => {
@@ -48,24 +59,13 @@ const Services = () => {
 
         if (currentCategory === 'all') {
             setFilteredProducts(ServicesData)
-            const minPrice = ServicesData.reduce((prev, cur) => (cur.price < prev.price ? cur : prev), { price: Infinity }).price;
-            const maxPrice = ServicesData.reduce((prev, cur) => (cur.price > prev.price ? cur : prev), { price: 0 }).price;
-            setPriceRange([minPrice, maxPrice]);
+            setPriceRange([0, 100])
         } else {
             setFilteredProducts(ServicesData?.filter((item) => item.category === currentCategory));
-            const minPrice = ServicesData.reduce((prev, cur) => (cur.price < prev.price ? cur : prev)).price;
-            const maxPrice = ServicesData.reduce((prev, cur) => (cur.price > prev.price ? cur : prev)).price;
-            setPriceRange([minPrice, maxPrice]);
+            setPriceRange([0, 100])
         }
 
-    }, [currentCategory, ServicesData]);
-
-    useEffect(() => {
-        setPriceRange([
-            filteredProducts?.reduce((prev, cur) => (cur.price < prev.price ? cur : prev), { price: Infinity }).price,
-            filteredProducts?.reduce((prev, cur) => (cur.price > prev.price ? cur : prev), { price: 0 }).price,
-        ]);
-    }, [filteredProducts]);
+    }, [currentCategory])
 
     const fetchProducts = async () => {
         setProducts(ServicesData);
@@ -96,7 +96,7 @@ const Services = () => {
     }
 
 
-    const addProduct = (product) => {
+    const addProduct = (product, e) => {
         const products = cookie.get('products');
 
 
@@ -179,8 +179,8 @@ const Services = () => {
                                 <div data-aos="fade-down" className="category-products">
                                     <h3>Catégories des produits</h3>
                                     <ul>
-                                        <li onClick={e => setCurrentCategory('all', e)}>Tout</li>
-                                        {categories.map((category, i) => <li onClick={e => setCurrentCategory(category, e)} key={i}>{category}</li>)}
+                                        <li onClick={e => setCurrentCategory('all')}>Tout</li>
+                                        {categories.map((category, i) => <li onClick={e => setCurrentCategory(category)} key={i}>{category}</li>)}
                                     </ul>
                                 </div>
                             </div>
