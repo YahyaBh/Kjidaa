@@ -95,7 +95,12 @@
                 }
             }
 
-            button {
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                padding: 10px;
                 border: none;
                 font-family: Dand;
                 font-size: 40px;
