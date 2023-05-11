@@ -62,19 +62,9 @@ const Home = () => {
     };
 
 
-    function getRandomPacks() {
-        const selectedPacks = [];
-        const numberOfPacks = 3; // change this value to select a different number of packs
-        for (let i = 0; i < numberOfPacks; i++) {
-            const randomIndex = Math.floor(Math.random() * packs.length);
-            selectedPacks.push(PackPacks[randomIndex]);
-        }
-        setRandomPacks(selectedPacks);
-    }
 
     useEffect(() => {
         selectRandomObjects();
-        getRandomPacks();
     }, []);
 
 
@@ -140,31 +130,30 @@ const Home = () => {
                     <div className="cards-container">
 
 
-                        {packItems.map((packItem, index) => {
-                            <div key={index} data-aos="fade-right" className={index === 2 ? `card-container main-card` : `card-container`}>
+                        <div data-aos="fade-right" className={index === 2 ? `card-container main-card` : `card-container`}>
 
-                                <img src={packItem.img} alt={packItem.name} />
+                            <img src={packItem.img} alt={packItem.name} />
 
-                                <div className="card-body">
-                                    <h3>{packName}</h3>
-                                    <hr />
-
-
-                                    <ul>
-                                        {packItem.props.map((prop, index) => {
-                                            <li key={index}>{prop}</li>
-                                        })}
-                                    </ul>
-
-                                    <hr />
+                            <div className="card-body">
+                                <h3>{packName}</h3>
+                                <hr />
 
 
-                                    <h3>À partir de - {packItem.price} Dhs </h3>
+                                <ul>
+                                    {packItem.props.map((prop, index) => {
+                                        <li key={index}>{prop}</li>
+                                    })}
+                                </ul>
 
-                                    <a href="/nos-packs">Reservation</a>
-                                </div>
+                                <hr />
+
+
+                                <h3>À partir de - {packItem.price} Dhs </h3>
+
+                                <a href="/nos-packs">Reservation</a>
                             </div>
-                        })}
+                        </div>
+
 
 
                     </div>
