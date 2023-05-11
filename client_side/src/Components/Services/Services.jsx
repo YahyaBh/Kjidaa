@@ -18,7 +18,7 @@ const Services = () => {
     const [loading, setLoading] = useState(true);
     const [animat, setAnimat] = useState(false);
     const [products, setProducts] = useState(null);
-    const [filteredProducts, setFilteredProducts] = useState([]);
+    const [filteredProducts, setFilteredProducts] = useState(ServicesData);
     const [priceRange, setPriceRange] = useState([0, 200]);
     const [currentPage, setCurrentPage] = useState(1);
     const [currentCategory, setCurrentCategory] = useState('all');
