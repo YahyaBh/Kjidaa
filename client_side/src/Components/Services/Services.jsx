@@ -56,13 +56,13 @@ const Services = () => {
 
         if (currentCategory === 'all') {
             setFilteredProducts(ServicesData)
-            setPriceRange([filteredProducts.reduce((prev, cur) => (cur.price < prev.price ? cur : prev)).price , products.reduce((prev, cur) => (cur.price > prev.price ? cur : prev)).price])
+            setPriceRange([filteredProducts?.reduce((prev, cur) => (cur.price < prev.price ? cur : prev)).price , products.reduce((prev, cur) => (cur.price > prev.price ? cur : prev)).price])
         } else {
             setFilteredProducts(ServicesData?.filter((item) => item.category === currentCategory));
-            setPriceRange([filteredProducts.reduce((prev, cur) => (cur.price < prev.price ? cur : prev)).price , products.reduce((prev, cur) => (cur.price > prev.price ? cur : prev)).price])
+            setPriceRange([filteredProducts?.reduce((prev, cur) => (cur.price < prev.price ? cur : prev)).price , products.reduce((prev, cur) => (cur.price > prev.price ? cur : prev)).price])
         }
 
-    }, [currentCategory , filteredProducts , products])
+    }, [currentCategory])
 
     const fetchProducts = async () => {
         setProducts(ServicesData);
