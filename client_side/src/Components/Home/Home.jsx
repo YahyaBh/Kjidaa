@@ -19,7 +19,35 @@ const Home = () => {
     const [loading, setLoading] = useState(true);
     const [randomObjects, setRandomObjects] = useState(null);
     const [randomPacks, setRandomPacks] = useState([]);
+    const [name, setName] = useState();
+    const [email, setEmail] = useState();
+    const [phone, setPhone] = useState();
+    const [message, setMessage] = useState();
+    const [messageSentS, setMessageSent] = useState();
 
+
+
+    const messageSent = () => {
+
+        if (name !== '' && email !== '' && phone !== '' && message !== '') {
+
+            setMessageSent(true)
+
+
+            Swal.fire({
+                title: 'Thank you',
+                text: 'Your message has been sent',
+                icon: 'success'
+            })
+        } else {
+            Swal.fire({
+                title: 'Error',
+                text: 'Please fill all the fields',
+                icon: 'error'
+            })
+        }
+
+    }
     const selectRandomObjects = () => {
         const randomIndices = [];
         while (randomIndices.length < 4) {
@@ -300,29 +328,30 @@ const Home = () => {
                         <h2>Posez <span>une Question</span></h2>
                     </div>
 
+                    {!messageSentS ?
+                        <form onSubmit={messageSent}>
 
-                    <form onSubmit={''} method="post">
+                            <div className="inputs-name-tel">
+                                <input data-aos="fade-right" type="text" placeholder="Name" onChange={e => setName(e.target.value)} name="name" id="name" maxLength={'20'} minLength={'4'} required />
 
-                        <div className="inputs-name-tel">
-                            <input data-aos="fade-right" type="text" placeholder="Name" name="name" id="name" maxLength={'20'} minLength={'4'} required />
-
-                            <input data-aos="fade-right" type="tel" placeholder="Tele" name="tel" id="tel" maxLength={'20'} minLength={'8'} required />
-                        </div>
-
-
-                        <input data-aos="fade-right" type="email" placeholder="Email" name="email" id="email" maxLength={'30'} minLength={'8'} required />
+                                <input data-aos="fade-right" type="tel" placeholder="Tele" name="tel" onChange={e => setPhone(e.target.value)} id="tel" maxLength={'20'} minLength={'8'} required />
+                            </div>
 
 
-                        <textarea data-aos="fade-in" required placeholder="Message" name="message" id="message" cols="30" rows="10" maxLength={'300'} minLength={'10'} />
+                            <input data-aos="fade-right" type="email" placeholder="Email" name="email" onChange={e => setEmail(e.target.value)} id="email" maxLength={'30'} minLength={'8'} required />
 
 
-                        <div data-aos="fade-right" className="checkbox-container">
-                            <input type="checkbox" name="accept" id="accept" required />
-                            <label htmlFor="accept"> J&#39;accepte que mes données soumises soient collectées et stockées.</label>
-                        </div>
-                        <button data-aos="fade-right" type="submit">Envoyez <AiOutlineSend /></button>
+                            <textarea data-aos="fade-in" required placeholder="Message" name="message" onChange={e => setMessage(e.target.value)} id="message" cols="30" rows="10" maxLength={'300'} minLength={'10'} />
 
-                    </form>
+
+                            <div data-aos="fade-right" className="checkbox-container">
+                                <input type="checkbox" name="accept" id="accept" required />
+                                <label htmlFor="accept"> J&#39;accepte que mes données soumises soient collectées et stockées.</label>
+                            </div>
+
+                            <button data-aos="fade-right" type="submit">Envoyez <AiOutlineSend /></button>
+
+                        </form> : <h2 style={{ color : '#000'}}>Thank you for your message</h2>}
                 </section>
 
 

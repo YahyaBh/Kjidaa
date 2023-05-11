@@ -85,7 +85,6 @@
     background-color: #e4e4e4;
     position: relative;
 
-
     @media screen and (min-width: 900px) {
         display: none;
     }
@@ -93,7 +92,7 @@
     aside {
         display: none;
         position: fixed;
-        width: 300px;
+        width: 400px;
         right: 0;
         top: 0;
         height: 100dvh;
@@ -123,15 +122,20 @@
                 li {
                     list-style: none;
                     font-size: 30px;
-                    width: 100%;
+                    width: 50%;
+                    border-bottom: 2px solid #fff;
 
                     a {
                         color: #fff;
-                        border-bottom: 2px solid #fff;
                         padding: 20px;
-                        width: 100%;
+                        width: 50%;
                         margin-bottom: 20px;
                         text-decoration: none;
+                        margin: auto;
+                    }
+
+                    .active {
+                        transform: scale(1.1) !important;
                     }
                 }
             }

@@ -298,6 +298,10 @@
                 width: 50%;
                 font-family: Contrail;
 
+                @media screen and (max-width: 900px) {
+                    width: 90%;
+                }
+
                 input::placeholder,
                 textarea::placeholder {
                     font-size: 25px;
@@ -316,6 +320,8 @@
                     font-family: Contrail;
                     font-size: 25px;
                     color: #6c4177;
+
+                    
                 }
 
                 a {

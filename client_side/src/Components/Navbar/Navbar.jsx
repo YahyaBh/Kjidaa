@@ -79,10 +79,10 @@ const Navbar = ({ target }) => {
                                 <ul>
                                     <li className={target === 'home' ? 'border_right active' : 'border_right'}><a href='/'>Accueil</a></li>
                                     <li className={target === 'nos-service' ? 'border_right active' : 'border_right'}><a href='/nos-service'>Nos Service</a></li>
-                                    <li className={target === 'nos-produits' ? 'border_right active' : 'border_right'}><a href='/nos-produits'>Nos Produits</a></li>
+                                    <li className={target === 'nos-produits' ? 'border_right active' : 'border_right'}><a href='/nos-packs'>Nos Packs</a></li>
                                     <li className={target === 'reservation' ? 'border_right active' : 'border_right'}><a href='/reservation'>Reservation</a></li>
                                     <li className={target === 'a-props' ? 'border_right active' : 'border_right'}><a href='/a-propos'>A Propos</a></li>
-                                    <li className={target === 'blog' ? 'border_right active' : 'border_right'}><a href='/blog'>Blog</a></li>
+                                    {/* <li className={target === 'blog' ? 'border_right active' : 'border_right'}><a href='/blog'>Blog</a></li> */}
                                     <li className={target === 'contact' ? `active` : ``}><a href='/contact'>Contact</a></li>
                                 </ul>
                             </section>
