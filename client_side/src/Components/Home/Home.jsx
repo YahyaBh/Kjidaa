@@ -3,10 +3,11 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "./Home.scss";
 import { Navigation, Pagination, Autoplay } from "swiper";
-import ImagePack from '../../assets/Images/Home/Carousel/MainCar.jpg';
 import Footer from "../Footer/Footer";
 import { RiWhatsappFill } from 'react-icons/ri'
 import Navbar from "../Navbar/Navbar";
+import ServicesPack from '../../assets/API/Services.json'
+import PackPacks from '../../assets/API/Packs.json'
 
 import { AiOutlineSend } from 'react-icons/ai'
 import Loading from "../../Layouts/Loading/Loading";
@@ -16,13 +17,49 @@ const Home = () => {
 
 
     const [loading, setLoading] = useState(true);
+    const [randomObjects, setRandomObjects] = useState(null);
+    const [randomPacks, setRandomPacks] = useState([]);
+
+    const selectRandomObjects = () => {
+        const randomIndices = [];
+        while (randomIndices.length < 4) {
+            const randomIndex = Math.floor(Math.random() * ServicesPack?.length);
+            if (!randomIndices.includes(randomIndex)) {
+                randomIndices.push(randomIndex);
+            }
+        }
+        const selectedObjects = randomIndices.map((index) => ServicesPack[index]);
+        setRandomObjects(selectedObjects);
+    };
+
+
+    const getRandomPacks = () => {
+        const selectedPacks = [];
+        let packsCopy = [...PackPacks];
+        for (let i = 0; i < 3; i++) {
+            const randomIndex = Math.floor(Math.random() * packsCopy.length);
+            const pack = packsCopy[randomIndex];
+            selectedPacks.push(pack);
+            packsCopy.splice(randomIndex, 1);
+        }
+        setRandomPacks(selectedPacks);
+    };
+
+    useEffect(() => {
+        selectRandomObjects();
+        getRandomPacks();
+    }, []);
+
+
 
 
     useEffect(() => {
         setTimeout(() => {
             setLoading(false);
         }, 1500);
-    })
+    }, [])
+
+
 
     return (
         loading ?
@@ -74,95 +111,41 @@ const Home = () => {
 
 
                     <div className="cards-container">
-                        <div data-aos="fade-right" className="card-container">
 
-                            <img src={ImagePack} alt="anniv" />
+                        {randomPacks.map((pack, index) => {
+                            const packName = Object.keys(pack)[0];
+                            const packItems = pack[packName];
 
-                            <div className="card-body">
-                                <h3>Pack Anniversaire</h3>
-                                <hr />
+                            return (
+                                packItems.map((packItem, index) => {
+                                    <div key={index} data-aos="fade-right" className={index === 2 ? `card-container main-card` : `card-container`}>
 
-                                <ul>
-                                    <li>Tables comprenant: Buffet / Décoration et
-                                        installation</li>
+                                        <img src={packItem.img} alt={packItem.name} />
 
-                                    <li>Gâteau personnalisé pour 10 personnes</li>
-
-                                    <li>Cup cake</li>
-
-                                    <li>Pop cake</li>
-
-                                    <li>Salé</li>
-                                </ul>
-
-                                <hr />
+                                        <div className="card-body">
+                                            <h3>{packName}</h3>
+                                            <hr />
 
 
-                                <h3>À partir de - 2500 Dhs </h3>
+                                            <ul>
+                                                {packItem.props.map((prop, index) => {
+                                                    <li key={index}>{prop}</li>
+                                                })}
+                                            </ul>
 
-                                <button>Reservation</button>
-                            </div>
-                        </div>
-
-                        <div data-aos="fade-right" className="card-container main-card">
-
-                            <img src={ImagePack} alt="anniv" />
-
-                            <div className="card-body">
-                                <h3>Pack Anniversaire</h3>
-                                <hr />
-
-                                <ul>
-                                    <li>Tables comprenant: Buffet / Décoration et
-                                        installation</li>
-
-                                    <li>Gâteau personnalisé pour 10 personnes</li>
-
-                                    <li>Cup cake</li>
-
-                                    <li>Pop cake</li>
-
-                                    <li>Salé</li>
-                                </ul>
-
-                                <hr />
+                                            <hr />
 
 
-                                <h3>À partir de - 2500 Dhs </h3>
+                                            <h3>À partir de - {packItem.price} Dhs </h3>
 
-                                <button>Reservation</button>
-                            </div>
-                        </div>
+                                            <a href="/nos-packs">Reservation</a>
+                                        </div>
+                                    </div>
+                                })
 
-                        <div data-aos="fade-right" className="card-container">
+                            )
+                        })}
 
-                            <img src={ImagePack} alt="anniv" />
-
-                            <div className="card-body">
-                                <h3>Pack Anniversaire</h3>
-                                <hr />
-
-                                <ul>
-                                    <li>Tables comprenant: Buffet / Décoration et
-                                        installation</li>
-
-                                    <li>Gâteau personnalisé pour 10 personnes</li>
-
-                                    <li>Cup cake</li>
-
-                                    <li>Pop cake</li>
-
-                                    <li>Salé</li>
-                                </ul>
-
-                                <hr />
-
-
-                                <h3>À partir de - 2500 Dhs </h3>
-
-                                <button>Reservation</button>
-                            </div>
-                        </div>
 
                     </div>
 
@@ -173,30 +156,15 @@ const Home = () => {
 
                     <div className="cards-categor">
                         <div className="images-container">
-                            <div data-aos="fade-right" className="image-container">
-                                <img src={ImagePack} alt="image1" />
 
-                                <h2>My Cake Design</h2>
-                            </div>
+                            {randomObjects.map((object) => (
+                                <div key={object.name} data-aos="fade-right" className="image-container">
+                                    <img src={object.image} alt="image1" />
+                                    <h2>{object.name}</h2>
+                                </div>
+                            ))}
 
-                            <div data-aos="fade-right" className="image-container">
-                                <img src={ImagePack} alt="image2" />
 
-                                <h2>My Cake Design</h2>
-
-                            </div>
-
-                            <div data-aos="fade-right" className="image-container">
-                                <img src={ImagePack} alt="image3" />
-
-                                <h2>My Cake Design</h2>
-                            </div>
-
-                            <div data-aos="fade-right" className="image-container">
-                                <img src={ImagePack} alt="image4" />
-
-                                <h2>My Cake Design</h2>
-                            </div>
                         </div>
 
 
@@ -316,7 +284,7 @@ const Home = () => {
 
 
 
-                <section  className="small-section-res" id="small-section-res">
+                <section className="small-section-res" id="small-section-res">
                     <h2 data-aos="fade-right">Laissez parler votre imagination
                         Nous allons la réaliser</h2>
 
