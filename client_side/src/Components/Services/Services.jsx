@@ -62,7 +62,7 @@ const Services = () => {
             setPriceRange([filteredProducts.reduce((prev, cur) => (cur.price < prev.price ? cur : prev)).price , products.reduce((prev, cur) => (cur.price > prev.price ? cur : prev)).price])
         }
 
-    }, [currentCategory])
+    }, [currentCategory , filteredProducts , products])
 
     const fetchProducts = async () => {
         setProducts(ServicesData);
@@ -93,7 +93,7 @@ const Services = () => {
     }
 
 
-    const addProduct = (product, e) => {
+    const addProduct = (product) => {
         const products = cookie.get('products');
 
 
@@ -176,8 +176,8 @@ const Services = () => {
                                 <div data-aos="fade-down" className="category-products">
                                     <h3>Catégories des produits</h3>
                                     <ul>
-                                        <li onClick={e => setCurrentCategory('all')}>Tout</li>
-                                        {categories.map((category, i) => <li onClick={e => setCurrentCategory(category)} key={i}>{category}</li>)}
+                                        <li onClick={e => setCurrentCategory('all' , e)}>Tout</li>
+                                        {categories.map((category, i) => <li onClick={e => setCurrentCategory(category , e)} key={i}>{category}</li>)}
                                     </ul>
                                 </div>
                             </div>
