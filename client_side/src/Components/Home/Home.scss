@@ -713,7 +713,12 @@
             }
         }
 
-        button {
+        a {
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
             background-color: #6c4177;
             color: #fff;
             font-family: Dand;

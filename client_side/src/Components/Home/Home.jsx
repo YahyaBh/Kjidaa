@@ -336,7 +336,7 @@ const Home = () => {
                         Nous allons la réaliser</h2>
 
 
-                    <button data-aos="fade-down">Demander un devis</button>
+                    <a href="/nos-service" data-aos="fade-down">Demander un devis</a>
                 </section>
 
 

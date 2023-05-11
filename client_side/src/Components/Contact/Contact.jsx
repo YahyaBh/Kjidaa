@@ -132,7 +132,7 @@ const Contact = () => {
                 </div>
 
                 {!messageSentS ?
-                    <form>
+                    <form onSubmit={messageSent}>
 
                         <div className="inputs-name-tel">
                             <input data-aos="fade-right" type="text" placeholder="Name" onChange={e => setName(e.target.value)} name="name" id="name" maxLength={'20'} minLength={'4'} required />
@@ -152,7 +152,7 @@ const Contact = () => {
                             <label htmlFor="accept"> J&#39;accepte que mes données soumises soient collectées et stockées.</label>
                         </div>
 
-                        <button data-aos="fade-right" onClick={e => messageSent}>Envoyez <AiOutlineSend /></button>
+                        <button data-aos="fade-right" type="submit">Envoyez <AiOutlineSend /></button>
 
                     </form> : <h2 style={{ color: '#000' }}>Thank you for your message</h2>}
             </section>
