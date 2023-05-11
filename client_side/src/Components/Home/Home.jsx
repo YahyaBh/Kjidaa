@@ -132,23 +132,19 @@ const Home = () => {
 
                         <div data-aos="fade-right" className={`card-container main-card`}>
 
-                            <img src={PackPacks["Pack laarssan"][0].img} alt={PackPacks["Pack laarssan"][0].name} />
+                            <img src={PackPacks[0]["Pack laarssan"][0].img} alt={PackPacks[0]["Pack laarssan"][0].name} />
 
                             <div className="card-body">
-                                <h3>{PackPacks["Pack laarssan"][0]}</h3>
+                                <h3>Pack laarssan</h3>
                                 <hr />
-
-
                                 <ul>
-                                    {PackPacks["Pack laarssan"][0].props.map((prop, index) => {
-                                        <li key={index}>{prop}</li>
-                                    })}
+                                    {PackPacks[0]["Pack laarssan"][0].props.map((prop, index) => <li key={index}>{prop}</li>)}
                                 </ul>
 
                                 <hr />
 
 
-                                <h3>À partir de - {PackPacks["Pack laarssan"][0].price} Dhs </h3>
+                                <h3>À partir de - <span>{PackPacks[0]["Pack laarssan"][0].price}</span> Dhs </h3>
 
                                 <a href="/nos-packs">Reservation</a>
                             </div>

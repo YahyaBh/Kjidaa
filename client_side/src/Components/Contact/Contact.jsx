@@ -96,7 +96,7 @@ const Contact = () => {
                     </div>
                     <div className="body">
                         <h3>Adresse</h3>
-                        <h5>N°755 Rue Tamada <br /> HayRue Adrar,<br /> Agadir 80650</h5>
+                        <h5>Place Branzarane,<br /> 51000 El Hajeb،<br /> El Hajeb 51000,<br /> Morocco</h5>
                     </div>
                 </a>
 
@@ -154,7 +154,7 @@ const Contact = () => {
 
                         <button data-aos="fade-right" onClick={e => messageSent}>Envoyez <AiOutlineSend /></button>
 
-                    </form> : <h2 style={{ color : '#000'}}>Thank you for your message</h2>}
+                    </form> : <h2 style={{ color: '#000' }}>Thank you for your message</h2>}
             </section>
 
 
