@@ -19,7 +19,7 @@ const Services = () => {
     const [animat, setAnimat] = useState(false);
     const [products, setProducts] = useState(null);
     const [filteredProducts, setFilteredProducts] = useState([]);
-    const [priceRange, setPriceRange] = useState([0, 2000]);
+    const [priceRange, setPriceRange] = useState([0, 200]);
     const [currentPage, setCurrentPage] = useState(1);
     const [currentCategory, setCurrentCategory] = useState('all');
     const [categories, setCategories] = useState([]);
@@ -49,16 +49,17 @@ const Services = () => {
                 (product) => product.price >= priceRange[0] && product.price <= priceRange[1]
             )
         );
-
-
-
     }, [products, priceRange]);
 
     useEffect(() => {
+        setAnimat(true);
+
         if (currentCategory === 'all') {
             setFilteredProducts(ServicesData)
+            setPriceRange([filteredProducts.reduce((prev, cur) => (cur.price < prev.price ? cur : prev)).price , products.reduce((prev, cur) => (cur.price > prev.price ? cur : prev)).price])
         } else {
             setFilteredProducts(ServicesData?.filter((item) => item.category === currentCategory));
+            setPriceRange([filteredProducts.reduce((prev, cur) => (cur.price < prev.price ? cur : prev)).price , products.reduce((prev, cur) => (cur.price > prev.price ? cur : prev)).price])
         }
 
     }, [currentCategory])

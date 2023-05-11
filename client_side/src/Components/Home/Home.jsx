@@ -215,7 +215,7 @@ const Home = () => {
                         </div>
 
 
-                        <button>Afficher tout</button>
+                        <a href="/nos-service">Afficher tout</a>
                     </div>
                 </section>
 

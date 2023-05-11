@@ -203,6 +203,7 @@
         align-items: center;
         flex-direction: column;
         font-family: Contrail;
+        padding: 50px 0;
 
         h2 {
             font-size: 60px;
@@ -379,7 +380,11 @@
                 }
             }
 
-            button {
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
                 border: none;
                 font-family: Dand;
                 font-size: 40px;
