@@ -16,7 +16,7 @@
             },
             {
                 "id": "AKLJSD98eisuagd73uqgdugt721e",
-                "img": "./assets/NosPacks/8.jpg",
+                "img": "./Images_public/Images_packs/wedding-bands-hands-bride-groom-with-beautiful-wedding-bouquet-made-greenery-white-flowers.jpg",
                 "name": "Pack 2",
                 "props": [
                     "Pastilla fruit de mer",
@@ -29,7 +29,7 @@
             },
             {
                 "id": "akjsdh83yd8gtusgajt36etgasfd32",
-                "img": "./assets/NosPacks/8.jpg",
+                "img": "./Images_public/Images_packs/wedding-bands-hands-bride-groom-with-beautiful-wedding-bouquet-made-greenery-white-flowers.jpg",
                 "name": "Pack 3",
                 "props": [
                     "Pastilla fruit de mer",
@@ -43,7 +43,7 @@
             },
             {
                 "id": "dj32uygdsadjry326tdfjhsmawd",
-                "img": "./assets/NosPacks/8.jpg",
+                "img": "./Images_public/Images_packs/wedding-bands-hands-bride-groom-with-beautiful-wedding-bouquet-made-greenery-white-flowers.jpg",
                 "name": "Pack 4",
                 "props": [
                     "Pastilla fruit de mer ou Pastilla poulet",
@@ -57,7 +57,7 @@
             },
             {
                 "id": "dewad32dsadg8i32by87t7ce",
-                "img": "./assets/NosPacks/8.jpg",
+                "img": "./Images_public/Images_packs/wedding-bands-hands-bride-groom-with-beautiful-wedding-bouquet-made-greenery-white-flowers.jpg",
                 "name": "Pack 5",
                 "props": [
                     "Pastilla fruit de mer",
@@ -71,7 +71,7 @@
             },
             {
                 "id": "fjhwgbcurt782trbbutf723rxu3r",
-                "img": "./assets/NosPacks/8.jpg",
+                "img": "./Images_public/Images_packs/wedding-bands-hands-bride-groom-with-beautiful-wedding-bouquet-made-greenery-white-flowers.jpg",
                 "name": "Pack 6",
                 "props": [
                     "Poissons grandes tailles : El Dorado,Poijot Royale (7kg)",
@@ -87,7 +87,7 @@
             },
             {
                 "id": "fusyer8c2ytnfbwyetx72tirt37bt8237nr",
-                "img": "./assets/NosPacks/8.jpg",
+                "img": "./Images_public/Images_packs/wedding-bands-hands-bride-groom-with-beautiful-wedding-bouquet-made-greenery-white-flowers.jpg",
                 "name": "Pack 7",
                 "props": [
                     "Pastilla fruit de mer avec pastilla d'amande sucré(les deux au meme temps sur table)",
@@ -107,7 +107,7 @@
         "Pack anniversaire": [
             {
                 "id": "j3y2criu2t3x7rt723turf23uyjtvr2u3xr",
-                "img": "./assets/NosPacks/8.jpg",
+                "img": "./Images_public/Images_packs/0040851_900.jpeg",
                 "name": "Pack Anniversaire",
                 "props": [
                     "1 Invite pour 150dh",
@@ -125,7 +125,7 @@
         "Pack Petite Dejeune": [
             {
                 "id": "ecjhgr2u3ytry2t3frt2x3vubrwyctr",
-                "img": "./assets/NosPacks/8.jpg",
+                "img": "./Images_public/Images_packs/peteet.jpg",
                 "name": "Petit Dejeuner complet",
                 "props": [
                     "Omlette avec une soupe",
@@ -139,7 +139,7 @@
             },
             {
                 "id": "yjc2tbrweuxr23urt7xwt7r",
-                "img": "./assets/NosPacks/8.jpg",
+                "img": "./Images_public/Images_packs/peteet.jpg",
                 "name": "Petit Dejeuner Beldi",
                 "props": [
                     "Mlwi",
@@ -152,7 +152,7 @@
             },
             {
                 "id": "ejhcgru23ytnxrtweytgbifu",
-                "img": "./assets/NosPacks/8.jpg",
+                "img": "./Images_public/Images_packs/peteet.jpg",
                 "name": "Petit dejeuner Parisiern",
                 "props": [
                     "Boissons chauds",

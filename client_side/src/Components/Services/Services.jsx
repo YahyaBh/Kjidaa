@@ -21,7 +21,8 @@ const Services = () => {
     const [filteredProducts, setFilteredProducts] = useState([]);
     const [priceRange, setPriceRange] = useState([0, 2000]);
     const [currentPage, setCurrentPage] = useState(1);
-
+    const [currentCategory, setCurrentCategory] = useState('all');
+    const [categories, setCategories] = useState([]);
 
     const productsPerPage = 9;
     const totalProducts = filteredProducts?.length;
@@ -35,6 +36,7 @@ const Services = () => {
 
     useEffect(() => {
         fetchProducts();
+        getCategories();
         setTimeout(() => {
             setLoading(false);
         }, 1500);
@@ -47,10 +49,19 @@ const Services = () => {
                 (product) => product.price >= priceRange[0] && product.price <= priceRange[1]
             )
         );
-        setTimeout(() => {
-            setAnimat(false);
-        }, 1500);
+
+
+
     }, [products, priceRange]);
+
+    useEffect(() => {
+        if (currentCategory === 'all') {
+            setFilteredProducts(ServicesData)
+        } else {
+            setFilteredProducts(ServicesData?.filter((item) => item.category === currentCategory));
+        }
+
+    }, [currentCategory])
 
     const fetchProducts = async () => {
         setProducts(ServicesData);
@@ -117,6 +128,14 @@ const Services = () => {
             })
     }
 
+    function getCategories() {
+        const uniqueCategories = [...new Set(ServicesData.map(item => item.category))];
+        setCategories(uniqueCategories);
+    }
+
+
+
+
 
     return (
         loading ?
@@ -156,24 +175,9 @@ const Services = () => {
                                 <div data-aos="fade-down" className="category-products">
                                     <h3>Catégories des produits</h3>
                                     <ul>
-                                        <li>My Bio Alimentaire</li>
-                                        <li>My Buffet</li>
-                                        <li>My Cake Design</li>
-                                        <li>My Ice Cream</li>
-                                        <li>My Menu</li>
-                                        <li>My Menu Traditionnel</li>
-                                        <li>My Pâtisserie</li>
-                                        <li>My Petit Déjeuner</li>
-                                        <li>My Thème Personnalisé</li>
-                                        <li>My Wedding</li>
-                                        <li>MyTraiteur</li>
-                                        <li>Nos services</li>
+                                        <li onClick={e => setCurrentCategory('all')}>Tout</li>
+                                        {categories.map((category, i) => <li onClick={e => setCurrentCategory(category)} key={i}>{category}</li>)}
                                     </ul>
-                                </div>
-
-
-                                <div className="tags-products">
-                                    <h3>Tags des produits</h3>
                                 </div>
                             </div>
                         </section>
@@ -210,17 +214,17 @@ const Services = () => {
                             </div>
 
                             {filteredProducts?.length > 0 && (
-                            <div className="pagination">
-                                {pageNumber.map((number) => (
-                                    <button key={number} className={currentPage === number ? `button-selected` : ''} onClick={e => handlePageChange(e, number)}>
-                                        {number}
-                                    </button>
-                                ))}
-                            </div>
-                        )}
+                                <div className="pagination">
+                                    {pageNumber.map((number) => (
+                                        <button key={number} className={currentPage === number ? `button-selected` : ''} onClick={e => handlePageChange(e, number)}>
+                                            {number}
+                                        </button>
+                                    ))}
+                                </div>
+                            )}
                         </section>
 
-                        
+
                     </div>
 
                 </div>

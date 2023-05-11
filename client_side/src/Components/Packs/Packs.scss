@@ -8,7 +8,7 @@
             align-items: center;
             justify-content: center;
             background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                url(/public/Images_public/Carousel/8.jpg);
+                url(../../../public/Images_public/Packs/IMG-20230428-WA0033.jpg);
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: scroll;
@@ -129,6 +129,7 @@
                         justify-content: center;
                         align-items: center;
                         flex-direction: column;
+                        text-align: center;
 
                         h3:nth-child(1) {
                             border-bottom: 2px solid #fff;

@@ -130,6 +130,27 @@ const Home = () => {
 
                     <div className="cards-container">
 
+                        <div data-aos="fade-right" className={`card-container`}>
+
+                            <img src={PackPacks[2]["Pack Petite Dejeune"][0].img} alt={PackPacks[2]["Pack Petite Dejeune"][0].name} />
+
+                            <div className="card-body">
+                                <h3>Pack Petite Dejeune</h3>
+                                <hr />
+                                <ul>
+                                    {PackPacks[2]["Pack Petite Dejeune"][0].props.map((prop, index) => <li key={index}>{prop}</li>)}
+                                </ul>
+
+                                <hr />
+
+
+                                <h3>À partir de - <span>{PackPacks[2]["Pack Petite Dejeune"][0].price}</span> Dhs </h3>
+
+                                <a href="/nos-packs">Reservation</a>
+                            </div>
+
+                        </div>
+
                         <div data-aos="fade-right" className={`card-container main-card`}>
 
                             <img src={PackPacks[0]["Pack laarssan"][0].img} alt={PackPacks[0]["Pack laarssan"][0].name} />
@@ -151,6 +172,26 @@ const Home = () => {
 
                         </div>
 
+                        <div data-aos="fade-right" className={`card-container`}>
+
+                            <img src={PackPacks[1]["Pack anniversaire"][0].img} alt={PackPacks[1]["Pack anniversaire"][0].name} />
+
+                            <div className="card-body">
+                                <h3>Pack Anniversaire</h3>
+                                <hr />
+                                <ul>
+                                    {PackPacks[1]["Pack anniversaire"][0].props.map((prop, index) => <li key={index}>{prop}</li>)}
+                                </ul>
+
+                                <hr />
+
+
+                                <h3>À partir de - <span>{PackPacks[1]["Pack anniversaire"][0].price}</span> Dhs </h3>
+
+                                <a href="/nos-packs">Reservation</a>
+                            </div>
+
+                        </div>
 
 
                     </div>

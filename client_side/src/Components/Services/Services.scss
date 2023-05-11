@@ -8,7 +8,7 @@
             align-items: center;
             justify-content: center;
             background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                url(/public/Images_public/Carousel/8.jpg);
+                url(../../../public/Images_public/Services/IMG-20230428-WA0035.jpg);
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: scroll;
@@ -73,7 +73,7 @@
             .products-search {
                 margin: 50px;
                 padding: 30px;
-                height: 100vh;
+                height: auto;
                 width: 300px;
                 display: flex;
                 flex-direction: row;
@@ -126,6 +126,10 @@
                             line-height: 2rem;
                             color: #fff;
                             font-size: 22px;
+                        
+                            li {
+                                cursor: pointer;
+                            }
                         }
                     }
 

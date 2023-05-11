@@ -82,8 +82,6 @@ const Reservation = () => {
                             modules={[Autoplay, Pagination, Navigation]}
                             className="carousel-swiper">
                             <SwiperSlide className="swiper-container"></SwiperSlide>
-                            <SwiperSlide className="swiper-container"></SwiperSlide>
-                            <SwiperSlide className="swiper-container"></SwiperSlide>
                         </Swiper>
                     </header>
 

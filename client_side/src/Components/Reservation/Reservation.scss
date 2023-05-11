@@ -48,22 +48,12 @@
             .carousel-swiper {
                 .swiper-container {
                     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                        url(.\Images_public\Home\Carousel\MainCar.jpg);
+                        url(../../../public/Images_public/Reserv/IMG-20230428-WA0031.jpg);
                     background-size: cover;
                     background-clip: border-box;
                     background-position: center;
                     background-attachment: scroll;
                     background-repeat: no-repeat;
-                }
-
-                .swiper-container:nth-child(2) {
-                    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                        url(Images_public\Home\Carousel\MainCar.jpg);
-                }
-
-                .swiper-container:nth-child(2) {
-                    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                        url(Images_public\Home\Carousel\MainCar.jpg);
                 }
             }
 
