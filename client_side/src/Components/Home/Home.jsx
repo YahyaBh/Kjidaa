@@ -63,6 +63,7 @@ const Home = () => {
 
 
 
+
     useEffect(() => {
         selectRandomObjects();
     }, []);
@@ -129,18 +130,17 @@ const Home = () => {
 
                     <div className="cards-container">
 
+                        <div data-aos="fade-right" className={`card-container main-card`}>
 
-                        <div data-aos="fade-right" className={index === 2 ? `card-container main-card` : `card-container`}>
-
-                            <img src={PackPacks[0]["Pack laarssan"].img} alt={PackPacks[0]["Pack laarssan"].name} />
+                            <img src={PackPacks["Pack laarssan"][0].img} alt={PackPacks["Pack laarssan"][0].name} />
 
                             <div className="card-body">
-                                <h3>{PackPacks[0]["Pack laarssan"]}</h3>
+                                <h3>{PackPacks["Pack laarssan"][0]}</h3>
                                 <hr />
 
 
                                 <ul>
-                                    {PackPacks[0]["Pack laarssan"].props.map((prop, index) => {
+                                    {PackPacks["Pack laarssan"][0].props.map((prop, index) => {
                                         <li key={index}>{prop}</li>
                                     })}
                                 </ul>
@@ -148,10 +148,11 @@ const Home = () => {
                                 <hr />
 
 
-                                <h3>À partir de - {PackPacks[0]["Pack laarssan"].price} Dhs </h3>
+                                <h3>À partir de - {PackPacks["Pack laarssan"][0].price} Dhs </h3>
 
                                 <a href="/nos-packs">Reservation</a>
                             </div>
+
                         </div>
 
 
