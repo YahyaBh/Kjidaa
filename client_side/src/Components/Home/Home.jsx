@@ -12,6 +12,7 @@ import PackPacks from '../../assets/API/Packs.json'
 import { AiOutlineSend } from 'react-icons/ai'
 import Loading from "../../Layouts/Loading/Loading";
 import { useEffect, useState } from "react";
+import Swal from "sweetalert2";
 
 const Home = () => {
 

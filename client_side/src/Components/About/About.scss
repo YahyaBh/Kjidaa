@@ -11,8 +11,19 @@
         background-repeat: no-repeat;
         background-attachment: scroll;
 
+        @media screen and (max-width: 900px) {
+            .scroll-downs {
+                margin: auto;
+            }
+        }
+
         h2 {
             font-size: 80px;
+
+            @media screen and (max-width: 900px) {
+                text-align: center;
+                font-size: 60px;
+            }
         }
 
         p {
@@ -20,6 +31,11 @@
             font-size: 40px;
             span {
                 color: #6c4177;
+            }
+
+            @media screen and (max-width: 900px) {
+                text-align: center;
+                font-size: 30px;
             }
         }
 
@@ -91,17 +107,33 @@
                 padding: 20px;
                 margin: 20px;
 
+                @media screen and (max-width: 900px) {
+                    flex-direction: column;
+                    padding: 10px;
+                    margin: 0;
+                }
+
                 img {
                     width: 400px;
                     height: 400px;
                     object-fit: cover;
                     border-radius: 50%;
                     border: 4px solid #6c4177;
+
+                    @media screen and (max-width: 900px) {
+                        width: 300px;
+                        height: 300px;
+                        margin: 50px 0;
+                    }
                 }
 
                 .text-cont {
                     width: 50%;
                     color: #000;
+
+                    @media screen and (max-width: 900px) {
+                        width: 90%;
+                    }
 
                     h3 {
                         font-size: 40px;

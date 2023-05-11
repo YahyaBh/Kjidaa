@@ -23,7 +23,7 @@ const Navbar = ({ target }) => {
     return (
 
 
-        <>
+        <div id='navbar'>
             <div className='contact_header'>
                 <div>
                     <h3 data-aos="fade-down">APPELEZ NOUS +212 667-667153</h3>
@@ -92,7 +92,7 @@ const Navbar = ({ target }) => {
                     </ul>
                 </ul>
             </div>
-        </>
+        </div>
     )
 }
 
