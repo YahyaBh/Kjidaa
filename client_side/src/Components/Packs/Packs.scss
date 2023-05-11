@@ -100,11 +100,9 @@
                 }
 
                 .pack {
-                    flex-basis: 30%;
+                    flex-basis: 40%;
                     width: auto;
                     height: auto;
-                    min-height: 1000px;
-                    max-height: 1000px;
                     background-color: #6c4177;
                     font-family: Contrail;
                     border-radius: 20px;
@@ -112,8 +110,6 @@
                     @media screen and (max-width: 900px) {
                         flex-basis: 80%;
                         height: auto;
-                        min-height: 300px;
-                        max-height: auto;
                         width: 80%;
                     }
 
