@@ -62,17 +62,15 @@ const Home = () => {
     };
 
 
-    const getRandomPacks = () => {
+    function getRandomPacks() {
         const selectedPacks = [];
-        let packsCopy = [...PackPacks];
-        for (let i = 0; i < 3; i++) {
-            const randomIndex = Math.floor(Math.random() * packsCopy.length);
-            const pack = packsCopy[randomIndex];
-            selectedPacks.push(pack);
-            packsCopy.splice(randomIndex, 1);
+        const numberOfPacks = 3; // change this value to select a different number of packs
+        for (let i = 0; i < numberOfPacks; i++) {
+            const randomIndex = Math.floor(Math.random() * packs.length);
+            selectedPacks.push(PackPacks[randomIndex]);
         }
         setRandomPacks(selectedPacks);
-    };
+    }
 
     useEffect(() => {
         selectRandomObjects();
@@ -141,38 +139,31 @@ const Home = () => {
 
                     <div className="cards-container">
 
-                        {randomPacks.map((pack, index) => {
-                            const packName = Object.keys(pack)[0];
-                            const packItems = pack[packName];
 
-                            return (
-                                packItems.map((packItem, index) => {
-                                    <div key={index} data-aos="fade-right" className={index === 2 ? `card-container main-card` : `card-container`}>
+                        {packItems.map((packItem, index) => {
+                            <div key={index} data-aos="fade-right" className={index === 2 ? `card-container main-card` : `card-container`}>
 
-                                        <img src={packItem.img} alt={packItem.name} />
+                                <img src={packItem.img} alt={packItem.name} />
 
-                                        <div className="card-body">
-                                            <h3>{packName}</h3>
-                                            <hr />
+                                <div className="card-body">
+                                    <h3>{packName}</h3>
+                                    <hr />
 
 
-                                            <ul>
-                                                {packItem.props.map((prop, index) => {
-                                                    <li key={index}>{prop}</li>
-                                                })}
-                                            </ul>
+                                    <ul>
+                                        {packItem.props.map((prop, index) => {
+                                            <li key={index}>{prop}</li>
+                                        })}
+                                    </ul>
 
-                                            <hr />
+                                    <hr />
 
 
-                                            <h3>À partir de - {packItem.price} Dhs </h3>
+                                    <h3>À partir de - {packItem.price} Dhs </h3>
 
-                                            <a href="/nos-packs">Reservation</a>
-                                        </div>
-                                    </div>
-                                })
-
-                            )
+                                    <a href="/nos-packs">Reservation</a>
+                                </div>
+                            </div>
                         })}
 
 
@@ -352,7 +343,7 @@ const Home = () => {
 
                             <button data-aos="fade-right" type="submit">Envoyez <AiOutlineSend /></button>
 
-                        </form> : <h2 style={{ color : '#000'}}>Thank you for your message</h2>}
+                        </form> : <h2 style={{ color: '#000' }}>Thank you for your message</h2>}
                 </section>
 
 
