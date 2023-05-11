@@ -56,7 +56,7 @@ const Services = () => {
 
         if (currentCategory === 'all') {
             setFilteredProducts(ServicesData)
-            setPriceRange([filteredProducts?.reduce((prev, cur) => (cur.price < prev.price ? cur : prev)).price , products.reduce((prev, cur) => (cur.price > prev.price ? cur : prev)).price])
+            setPriceRange([filteredProducts?.reduce((prev, cur) => (cur.price < prev.price ? cur : prev), { price: Infinity }).price , products.reduce((prev, cur) => (cur.price > prev.price ? cur : prev), { price: 0 }).price])
         } else {
             setFilteredProducts(ServicesData?.filter((item) => item.category === currentCategory));
             setPriceRange([filteredProducts?.reduce((prev, cur) => (cur.price < prev.price ? cur : prev)).price , products.reduce((prev, cur) => (cur.price > prev.price ? cur : prev)).price])
