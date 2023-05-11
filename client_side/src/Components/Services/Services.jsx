@@ -48,9 +48,16 @@ const Services = () => {
 
         if (currentCategory === 'all') {
             setFilteredProducts(ServicesData)
+            const minPrice = ServicesData.reduce((prev, cur) => (cur.price < prev.price ? cur : prev), { price: Infinity }).price;
+            const maxPrice = ServicesData.reduce((prev, cur) => (cur.price > prev.price ? cur : prev), { price: 0 }).price;
+            setPriceRange([minPrice, maxPrice]);
         } else {
             setFilteredProducts(ServicesData?.filter((item) => item.category === currentCategory));
+            const minPrice = ServicesData.reduce((prev, cur) => (cur.price < prev.price ? cur : prev)).price;
+            const maxPrice = ServicesData.reduce((prev, cur) => (cur.price > prev.price ? cur : prev)).price;
+            setPriceRange([minPrice, maxPrice]);
         }
+
     }, [currentCategory, ServicesData]);
 
     useEffect(() => {
