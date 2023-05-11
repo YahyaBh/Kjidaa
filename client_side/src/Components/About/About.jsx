@@ -77,7 +77,7 @@ const About = () => {
 
                                 <p>Nous répondons avec empressement aux demandes privées et corporatives quel que soit l’importance de votre évènement.
                                     Des mets savoureux, une présentation impeccable, un service parfait pour un évènement mémorable, voilà ce à quoi nous nous engageons.
-                                    Inauguration, anniversaire, baptême, funérailles, My Traiteur vous offre un service à la hauteur de vos attentes.
+                                    Inauguration, anniversaire, baptême, funérailles, Traiteur Kjidaa vous offre un service à la hauteur de vos attentes.
                                     Chaque petit détail compte et vous êtes en droit d’exiger ce qu’il se fait de mieux. Voilà notre souci d’excellence.</p>
                             </div>
 
@@ -87,13 +87,13 @@ const About = () => {
                         <div className="a-propos-cont">
 
                             <div data-aos="fade-left" className="text-cont">
-                                <h3>MY TRAITEUR À VOTRE SERVICE</h3>
+                                <h3>Traiteur Kjidaa À VOTRE SERVICE</h3>
 
                                 <p>Organiser un évènement gourmand demande beaucoup d’efforts. Comme c’est notre spécialité,
                                     n’hésitez pas à déléguer : nous serons ravis de prendre les choses en main pour que vous ayez l’esprit tranquille.
                                     La planification du menu, la confection des plats, la livraison, la mise en place, le service… Nous pouvons tout faire à
                                     votre place. D’une étape à l’autre, nous saurons vous conseiller avec soin pour qu’aucun détail ne soit laissé au hasard
-                                    mais aussi pour voir à ce que l’ambiance et le service soient impeccables.Quelle que soit occasion, My Traiteur s’adaptera
+                                    mais aussi pour voir à ce que l’ambiance et le service soient impeccables.Quelle que soit occasion, Traiteur Kjidaa s’adaptera
                                     pour vous offrir ce qu’il y a de mieux selon le concept que vous aurez choisi. Faites-nous confiance : on s’occupe de tout !</p>
                             </div>
 
@@ -123,7 +123,7 @@ const About = () => {
 
                                 <p>Notre équipe se chargera de la livraison des commandes à Agadir et dans les environs. Notre personnel de cuisine et de service est également à votre entière disposition pour s’assurer que tout se déroulera dans les règles de l’art et que vos convives soient traités aux petits soins.
                                     Cette offre ne s’applique pas qu’aux évènements de grande envergure. Pourquoi ne pas profiter de notre service pour vos buffets, Choisissez ce qui vous fait envie sur nos divers menus traiteurs ou encore, créez votre menu de toute pièce avec notre chef cuisinière et nous nous ferons un plaisir de vous l’apporter jusque chez vous.
-                                    Quelle que soit occasion, My Traiteur s’adaptera pour vous offrir ce qu’il y a de mieux selon le concept que vous aurez choisi. Faites-nous confiance : on s’occupe de tout !</p>
+                                    Quelle que soit occasion, Traiteur Kjidaa s’adaptera pour vous offrir ce qu’il y a de mieux selon le concept que vous aurez choisi. Faites-nous confiance : on s’occupe de tout !</p>
                             </div>
 
                             <img data-aos="fade-right" src={AboutPic} alt="About" />

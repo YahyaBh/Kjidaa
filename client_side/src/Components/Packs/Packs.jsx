@@ -55,12 +55,15 @@ const Packs = () => {
                                             <div key={index} className="pack">
                                                 <img src={pack.img} alt={pack.name} />
                                                 <div className='body-pack'>
-                                                    <h3>{pack.name}</h3>
-                                                    <ul>
-                                                        {pack.props.map((prop, index) => <li key={index}>{prop}</li>)}
-                                                        <hr />
-                                                    </ul>
-                                                    <h3>À partir de - <span>{pack.price} Dhs</span> {pack.old_price ? <del>{pack.old_price} Dhs</del> : ''}</h3>
+                                                    <div className='text-container'>
+                                                        <h3>{pack.name}</h3>
+                                                        <ul>
+                                                            {pack.props.map((prop, index) => <li key={index}>{prop}</li>)}
+                                                            <hr />
+                                                        </ul>
+                                                        <h3>À partir de - <span>{pack.price} Dhs</span> {pack.old_price ? <del>{pack.old_price} Dhs</del> : ''}</h3>
+
+                                                    </div>
                                                     <a href={`/reserve/${pack.id}`}>Reserver</a>
                                                 </div>
                                             </div>
