@@ -35,14 +35,6 @@ const Services = () => {
     );
 
     useEffect(() => {
-        fetchProducts();
-        getCategories();
-        setTimeout(() => {
-            setLoading(false);
-        }, 1500);
-    }, []);
-
-    useEffect(() => {
         setAnimat(true);
         setFilteredProducts(
             products?.filter(
@@ -56,13 +48,17 @@ const Services = () => {
 
         if (currentCategory === 'all') {
             setFilteredProducts(ServicesData)
-            setPriceRange([filteredProducts?.reduce((prev, cur) => (cur.price < prev.price ? cur : prev), { price: Infinity }).price , products.reduce((prev, cur) => (cur.price > prev.price ? cur : prev), { price: 0 }).price])
         } else {
             setFilteredProducts(ServicesData?.filter((item) => item.category === currentCategory));
-            setPriceRange([filteredProducts?.reduce((prev, cur) => (cur.price < prev.price ? cur : prev)).price , products.reduce((prev, cur) => (cur.price > prev.price ? cur : prev)).price])
         }
+    }, [currentCategory, ServicesData]);
 
-    }, [currentCategory])
+    useEffect(() => {
+        setPriceRange([
+            filteredProducts?.reduce((prev, cur) => (cur.price < prev.price ? cur : prev), { price: Infinity }).price,
+            filteredProducts?.reduce((prev, cur) => (cur.price > prev.price ? cur : prev), { price: 0 }).price,
+        ]);
+    }, [filteredProducts]);
 
     const fetchProducts = async () => {
         setProducts(ServicesData);
@@ -176,8 +172,8 @@ const Services = () => {
                                 <div data-aos="fade-down" className="category-products">
                                     <h3>Catégories des produits</h3>
                                     <ul>
-                                        <li onClick={e => setCurrentCategory('all' , e)}>Tout</li>
-                                        {categories.map((category, i) => <li onClick={e => setCurrentCategory(category , e)} key={i}>{category}</li>)}
+                                        <li onClick={e => setCurrentCategory('all', e)}>Tout</li>
+                                        {categories.map((category, i) => <li onClick={e => setCurrentCategory(category, e)} key={i}>{category}</li>)}
                                     </ul>
                                 </div>
                             </div>
