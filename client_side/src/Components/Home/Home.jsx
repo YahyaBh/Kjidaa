@@ -19,7 +19,7 @@ const Home = () => {
 
     const [loading, setLoading] = useState(true);
     const [randomObjects, setRandomObjects] = useState(null);
-    const [randomPacks, setRandomPacks] = useState([]);
+
     const [name, setName] = useState();
     const [email, setEmail] = useState();
     const [phone, setPhone] = useState();
@@ -132,15 +132,15 @@ const Home = () => {
 
                         <div data-aos="fade-right" className={index === 2 ? `card-container main-card` : `card-container`}>
 
-                            <img src={packItem.img} alt={packItem.name} />
+                            <img src={PackPacks[0]["Pack laarssan"].img} alt={PackPacks[0]["Pack laarssan"].name} />
 
                             <div className="card-body">
-                                <h3>{packName}</h3>
+                                <h3>{PackPacks[0]["Pack laarssan"]}</h3>
                                 <hr />
 
 
                                 <ul>
-                                    {packItem.props.map((prop, index) => {
+                                    {PackPacks[0]["Pack laarssan"].props.map((prop, index) => {
                                         <li key={index}>{prop}</li>
                                     })}
                                 </ul>
@@ -148,7 +148,7 @@ const Home = () => {
                                 <hr />
 
 
-                                <h3>À partir de - {packItem.price} Dhs </h3>
+                                <h3>À partir de - {PackPacks[0]["Pack laarssan"].price} Dhs </h3>
 
                                 <a href="/nos-packs">Reservation</a>
                             </div>
