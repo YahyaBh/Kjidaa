@@ -1,4 +1,4 @@
-import { Fragment, useLayoutEffect, useState } from "react"
+import { useLayoutEffect, useState } from "react"
 import Navbar from "../Navbar/Navbar"
 import Footer from "../Footer/Footer"
 import { Navigation, Pagination, Autoplay } from "swiper";
@@ -96,6 +96,7 @@ const Reservation = () => {
                             <div data-aos="fade-right" className="select">
                                 <select name="city" id="city" placeholder="Ville*" onChange={e => setCity(e.target.value)} required>
                                     <option defaultChecked>Choisez votre ville</option>
+                                    <option value="El Hajeb">El Hajeb</option>
                                     <option value="Agadir">Agadir</option>
                                     <option value="Al Hoceima">Al Hoceima</option>
                                     <option value="Beni Mellal">Beni Mellal</option>
@@ -140,7 +141,7 @@ const Reservation = () => {
                                             <>
 
                                                 <tr data-aos="fade-right" key={index}>
-                                                    <td className="delete" onClick={e => deleteItem(product)}><TiDelete /></td>
+                                                    <td className="delete" onClick={e => deleteItem(product , e)}><TiDelete /></td>
                                                     <td >{product.name}</td>
                                                     <td >{product.quantity}</td>
                                                     <td >{product.price} MAD</td>
@@ -160,7 +161,7 @@ const Reservation = () => {
 
 
 
-                            <a target="blank" href={`https://api.whatsapp.com/send/?phone=212665845124&text=Bonjour%20Mon%20Nom%20%3A%20*${name}*%20%2C%0AMon%20Numero%20%3A%20*${phone}*%2C%0AMa%20Ville%20%3A%20*${city}*%20%2C%0AMes%20exigences%20%3A%20*${order.map(order => order.name + '* Quantite : *' + order.quantity + '* Prix Total : *' + order.price)} MAD*`} className={`btn btn-primary ${name && phone && Cookies.get('products') && city ? '' : 'disabled'}`}>Envoyez</a>
+                            <a target="blank" href={`https://api.whatsapp.com/send/?phone=212767667153&text=Bonjour%20Mon%20Nom%20%3A%20*${name}*%20%2C%0AMon%20Numero%20%3A%20*${phone}*%2C%0AMa%20Ville%20%3A%20*${city}*%20%2C%0AMes%20exigences%20%3A%20*${order?.map(order => order.name + '* Quantite : *' + order.quantity + '* Prix Total : *' + order.price)} MAD*`} className={`btn btn-primary ${name && phone && Cookies.get('products') && city ? '' : 'disabled'}`}>Envoyez</a>
 
                         </form>
                     </section>
