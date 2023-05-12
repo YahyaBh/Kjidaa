@@ -47,10 +47,10 @@ const Footer = () => {
                     <br />
 
                     <ul>
-                        <li>N°755 Rue Tamada Hay</li>
-                        <li>Rue Adrar, Agadir 80650</li>
+                        <li>Place Branzarane,51000 El Hajeb</li>
+                        <li>El Hajeb 51000, Morocco</li>
                         <li>Tél: +212 661-60-49-85</li>
-                        <li>contact@mytraiteur.ma</li>
+                        <li>kjidaa@gmail.com</li>
                     </ul>
                 </div>
 
@@ -77,7 +77,7 @@ const Footer = () => {
 
             <div className="under-footer">
                 <div className="made-by">
-                    <span><a href='https://webinasales.com/'>WEBINA</a></span> © 2023 All Rights Reserved
+                    <span><a href='https://webinasites.com/'>WEBINA</a></span> © 2023 All Rights Reserved
                 </div>
 
                 <div className="social-media">
