@@ -7,7 +7,7 @@ import { AiOutlineInsertRowAbove } from 'react-icons/ai'
 import Loading from "../../Layouts/Loading/Loading";
 import cookie from "cookies-js";
 import Swal from "sweetalert2";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import ServicesData from '../../assets/API/Services.json'
 
 // eslint-disable-next-line react/prop-types
@@ -23,6 +23,7 @@ const Services = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const [currentCategory, setCurrentCategory] = useState('all');
     const [categories, setCategories] = useState([]);
+    const [active, setActive] = useState(false);
 
     const productsPerPage = 9;
     const totalProducts = filteredProducts?.length;
@@ -33,6 +34,16 @@ const Services = () => {
         indexOfFirstProduct,
         indexOfLastProduct
     );
+
+    const setActiveModal = () => {
+
+        if (active) {
+            setActive(false);
+        } else {
+            setActive(true);
+        }
+
+    }
 
     useEffect(() => {
         fetchProducts();
@@ -119,17 +130,7 @@ const Services = () => {
         cookie.set('products', updatedValue);
 
 
-        Swal.fire({
-            title: `${product.quantity ? product.quantity : 1} service , ${product.name} a été ajouté avec succès`,
-            showCancelButton: true,
-            showConfirmButton: true,
-            confirmButtonColor: '#000'
-        })
-            .then(res => {
-                if (res.isConfirmed) {
-                    navigate('/reservation', { replace: true });
-                }
-            })
+        setActiveModal()
     }
 
     function getCategories() {
@@ -150,6 +151,17 @@ const Services = () => {
 
                 <Navbar target={'nos-service'} />
 
+
+                <div id="modalServices" className={active ? "modal active-m" : "modal"}>
+
+                    <div className="modal-content">
+                        <span className="close" onClick={e => setActiveModal()}>&times;</span>
+                        <div className="buttons-container">
+                            <Link to={'/reservation'} >Voir Panier</Link>
+                            <button onClick={e => setActiveModal()}>Ajoute Autre</button>
+                        </div>
+                    </div>
+                </div>
 
 
                 <div className="nos-services">

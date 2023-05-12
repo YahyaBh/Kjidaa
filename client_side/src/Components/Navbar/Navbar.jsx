@@ -3,6 +3,8 @@ import Logo from '../../assets/Images/Gen/Logo.png'
 import { MdOutlineSegment } from 'react-icons/md'
 import { AiOutlineClose } from 'react-icons/ai'
 import { useState } from 'react'
+import Cookies from 'cookies-js'
+
 
 // eslint-disable-next-line react/prop-types
 const Navbar = ({ target }) => {
@@ -46,7 +48,7 @@ const Navbar = ({ target }) => {
                         <li data-aos="fade-left" data-aos-duration="200" className={target === 'home' ? 'border_right active' : 'border_right'}><a href='/'>Accueil</a></li>
                         <li data-aos="fade-left" data-aos-duration="400" className={target === 'nos-service' ? 'border_right active' : 'border_right'}><a href='nos-service'>Nos Service</a></li>
                         <li data-aos="fade-left" data-aos-duration="600" className={target === 'nos-packs' ? 'border_right active' : 'border_right'}><a href='nos-packs'>Nos Packs</a></li>
-                        <li data-aos="fade-left" data-aos-duration="800" className={target === 'reservation' ? 'border_right active' : 'border_right'}><a href='reservation'>Reservation</a></li>
+                        <li data-aos="fade-left" data-aos-duration="800" className={target === 'reservation' ? 'border_right active' : 'border_right'}><a href='reservation'>Reservation {Cookies.get('products') ? <span className='cycle-notice'>{JSON.parse(Cookies.get('products')).length}</span> : ''}</a></li>
                         <li data-aos="fade-left" data-aos-duration="1000" className={target === 'a-propos' ? 'border_right active' : 'border_right'}><a href='a-propos'>A Propos</a></li>
                         {/* <li data-aos="fade-left" data-aos-duration="1200" className={target === 'blog' ? 'border_right active' : 'border_right'}><a href='/blog'>Blog</a></li> */}
                         <li data-aos="fade-left" data-aos-duration="1400" className={target === 'contact' ? `active` : ``}><a href='/contact'>Contact</a></li>

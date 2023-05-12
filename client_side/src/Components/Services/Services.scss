@@ -126,7 +126,7 @@
                             line-height: 2rem;
                             color: #fff;
                             font-size: 22px;
-                        
+
                             li {
                                 cursor: pointer;
                             }
@@ -306,7 +306,7 @@
                                 outline: none;
                                 font-size: 20px;
                                 cursor: pointer;
-                                transition: all .3s ease;
+                                transition: all 0.3s ease;
 
                                 &:hover {
                                     background-color: #6c4177;
@@ -345,5 +345,65 @@
         .button-selected {
             background-color: #625067;
         }
+    }
+
+    .active-m {
+        display: block !important;
+    }
+
+    #modalServices {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0); /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    }
+
+    /* Modal Content */
+    .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+
+        .buttons-container {
+            button:nth-child(1) {
+                background-color: #6c4177;
+                color: #fff;
+                border-radius: 10px;
+                padding: 2px 20px;
+                border: none;
+            }
+
+            button:nth-child(2) {
+                background-color: #fff;
+                color: #6c4177;
+                border-radius: 10px;
+                padding: 2px 20px;
+                border: none;
+            }
+        }
+    }
+
+    /* The Close Button */
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
     }
 }
