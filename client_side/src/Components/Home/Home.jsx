@@ -244,9 +244,9 @@ const Home = () => {
                         <div className="flex-container-column">
                             <div data-aos="fade-down" className="order-even">
                                 <div className="left-panel">
-                                    <h4>ACCUEIL</h4>
+                                    <h4>Acceuil</h4>
                                     <hr />
-                                    <p>ÉQUIPES DYNAMIQUES DOTÉES D’UNE GRANDE AISANCE RELATIONNELLE</p>
+                                    <p>Intégration facile avec notre menu.</p>
                                 </div>
 
                                 <div className="right-panel">
@@ -255,9 +255,9 @@ const Home = () => {
                             </div>
                             <div data-aos="fade-down" data-aos-duration="250" className="order-even">
                                 <div className="left-panel">
-                                    <h4>CUISINE MAROCAINE</h4>
+                                    <h4>Nos Services</h4>
                                     <hr />
-                                    <p>ÉQUIPES DYNAMIQUES DOTÉES D’UNE GRANDE AISANCE RELATIONNELLE</p>
+                                    <p>Des services variables et savoureux.</p>
                                 </div>
 
                                 <div className="right-panel">
@@ -266,9 +266,9 @@ const Home = () => {
                             </div>
                             <div data-aos="fade-down" data-aos-duration="500" className="order-even">
                                 <div className="left-panel">
-                                    <h4>CAKE DESIGN</h4>
+                                    <h4>Nos Packs</h4>
                                     <hr />
-                                    <p>ÉQUIPES DYNAMIQUES DOTÉES D’UNE GRANDE AISANCE RELATIONNELLE</p>
+                                    <p>Des packs plein en créativité.</p>
                                 </div>
 
                                 <div className="right-panel">
@@ -288,9 +288,9 @@ const Home = () => {
                                 </div>
 
                                 <div className="left-panel">
-                                    <h4>ACCUEIL</h4>
+                                    <h4>Reservation</h4>
                                     <hr />
-                                    <p>ÉQUIPES DYNAMIQUES DOTÉES D’UNE GRANDE AISANCE RELATIONNELLE</p>
+                                    <p>Réservation rapide et instante.</p>
                                 </div>
 
 
@@ -301,9 +301,9 @@ const Home = () => {
                                     <h3>05</h3>
                                 </div>
                                 <div className="left-panel">
-                                    <h4>CUISINE MAROCAINE</h4>
+                                    <h4>A Propos</h4>
                                     <hr />
-                                    <p>ÉQUIPES DYNAMIQUES DOTÉES D’UNE GRANDE AISANCE RELATIONNELLE</p>
+                                    <p> Savez mieux de nous.</p>
                                 </div>
 
 
@@ -314,9 +314,9 @@ const Home = () => {
                                     <h3>06</h3>
                                 </div>
                                 <div className="left-panel">
-                                    <h4>CAKE DESIGN</h4>
+                                    <h4>Contact</h4>
                                     <hr />
-                                    <p>ÉQUIPES DYNAMIQUES DOTÉES D’UNE GRANDE AISANCE RELATIONNELLE</p>
+                                    <p>Contactez nous à tout moment.</p>
                                 </div>
 
 
