@@ -83,9 +83,9 @@ const Footer = () => {
                 </div>
 
                 <div className="social-media">
-                    <div className="cycle-media"><a href='https://instagram.com/_webina'><BsInstagram/></a></div>
-                    <div className="cycle-media"><a href='https://api.whatsapp.com/send/?phone=212767667153'><BsWhatsapp/></a></div>
-                    <div className="cycle-media"><a href='https://goo.gl/maps/FosiACKkUbgWwFtG6'><BsFillMapFill/></a></div>
+                    <div className="cycle-media"><a target='blank' href='https://instagram.com/_webina'><BsInstagram/></a></div>
+                    <div className="cycle-media"><a target='blank' href='https://api.whatsapp.com/send/?phone=212767667153'><BsWhatsapp/></a></div>
+                    <div className="cycle-media"><a target='blank' href='https://goo.gl/maps/FosiACKkUbgWwFtG6'><BsFillMapFill/></a></div>
                 </div>
             </div>
 

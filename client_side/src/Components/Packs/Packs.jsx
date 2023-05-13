@@ -54,9 +54,9 @@ const Packs = () => {
 
                             <p>Réservez votre pack en quelques secondes, avec nos méthodes de réservation</p>
 
-                            <input type="text" onChange={e => setName(e.target.value)} placeholder='Nom*' value={name} minLength={'6'} maxLength={'18'} />
+                            <input type="text" pattern="[a-zA-Z-]+" onChange={e => setName(e.target.value)} placeholder='Nom*' value={name} minLength={'6'} maxLength={'18'} />
 
-                            <input type="tel" onChange={e => setPhone(e.target.value)} placeholder='Tel*' value={phone} minLength={'6'} maxLength={'18'} />
+                            <input type="tel" pattern="[0-9]{1,5}" onChange={e => setPhone(e.target.value)} placeholder='Tel*' value={phone} minLength={'6'} maxLength={'18'} />
 
                             <div data-aos="fade-right" className="select">
                                 <select name="city" id="city" placeholder="Ville*" onChange={e => setCity(e.target.value)} required>
@@ -91,7 +91,7 @@ const Packs = () => {
                             </div>
 
 
-                            <a className={`btn ${name === '' || phone === '' || city === '' ? 'disabled' : ''}`} href={`https://api.whatsapp.com/send/?phone=212767667153&text=Bonjour%20Mon%20Nom%20%3A%20*${name}*%20%2C%0AMon%20Numero%20%3A%20*${phone}*%2C%0AMa%20Ville%20%3A%20*${city}*%20%2C%0AMes%20exigences%20%3A%20*${selectedRes}*`}>Reserver</a>
+                            <a className={`btn ${name === '' || phone === '' || city === '' ? 'disabled' : ''}`} target='blank' href={`https://api.whatsapp.com/send/?phone=212767667153&text=Bonjour%20Mon%20Nom%20%3A%20*${name}*%20%2C%0AMon%20Numero%20%3A%20*${phone}*%2C%0AMa%20Ville%20%3A%20*${city}*%20%2C%0AMes%20exigences%20%3A%20*${selectedRes}*`}>Reserver</a>
                         </div>
                     </div>
                 </div>
