@@ -2,12 +2,13 @@
     .reserve-container {
         header {
             .header-text {
+                text-align: center;
                 height: 80dvh !important;
                 a {
                     font-size: 40px;
                     background-color: #6c4177;
                     color: #fff;
-                    padding: 8px 40px;
+                    padding: 8px 85px;
                     text-decoration: none;
                     border-radius: 40px;
                     &:hover {

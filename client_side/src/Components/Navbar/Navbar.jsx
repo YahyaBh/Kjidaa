@@ -58,7 +58,7 @@ const Navbar = ({ target }) => {
 
                     <ul>
                         <li data-aos="fade-left" data-aos-duration="200" className={target === 'home' ? 'border_right active' : 'border_right'}><a href='/'>Accueil</a></li>
-                        <li data-aos="fade-left" data-aos-duration="400" className={target === 'nos-service' ? 'border_right active' : 'border_right'}><a href='nos-service'>Nos Service</a></li>
+                        <li data-aos="fade-left" data-aos-duration="400" className={target === 'nos-service' ? 'border_right active' : 'border_right'}><a href='nos-service'>Nos Services</a></li>
                         <li data-aos="fade-left" data-aos-duration="600" className={target === 'nos-packs' ? 'border_right active' : 'border_right'}><a href='nos-packs'>Nos Packs</a></li>
                         <li data-aos="fade-left" data-aos-duration="800" className={target === 'reservation' ? 'border_right active' : 'border_right'}><a href='reservation'>Reservation {products ? <span className='cycle-notice'>{products.lenght}</span> : ''}</a></li>
                         <li data-aos="fade-left" data-aos-duration="1000" className={target === 'a-propos' ? 'border_right active' : 'border_right'}><a href='a-propos'>A Propos</a></li>
@@ -92,7 +92,7 @@ const Navbar = ({ target }) => {
                             <section>
                                 <ul>
                                     <li className={target === 'home' ? 'border_right active' : 'border_right'}><a href='/'>Accueil</a></li>
-                                    <li className={target === 'nos-service' ? 'border_right active' : 'border_right'}><a href='nos-service'>Nos Service</a></li>
+                                    <li className={target === 'nos-service' ? 'border_right active' : 'border_right'}><a href='nos-service'>Nos Services</a></li>
                                     <li className={target === 'nos-produits' ? 'border_right active' : 'border_right'}><a href='nos-packs'>Nos Packs</a></li>
                                     <li className={target === 'reservation' ? 'border_right active' : 'border_right'}><a href='reservation'>Reservation</a></li>
                                     <li className={target === 'a-props' ? 'border_right active' : 'border_right'}><a href='a-propos'>A Propos</a></li>

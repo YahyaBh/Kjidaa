@@ -91,7 +91,7 @@ const Home = () => {
                         <h1 data-aos="fade-right">Bienvenue Chez <span>Kjidaa</span></h1>
 
                         <h3 data-aos="fade-right" data-aos-duration="500">le meilleur traiteur dans le maroc</h3>
-                        <a href="/nos-service" data-aos="fade-right" data-aos-duration="1000">Nos Service</a>
+                        <a href="/nos-service" data-aos="fade-right" data-aos-duration="1000">Nos Services</a>
                     </div>
 
                     <Swiper
