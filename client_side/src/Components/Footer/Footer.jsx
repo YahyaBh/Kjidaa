@@ -52,7 +52,7 @@ const Footer = () => {
                         <li>Place Branzarane,51000 El Hajeb</li>
                         <li>El Hajeb 51000, Morocco</li>
                         <li>Tél: +212 661-60-49-85</li>
-                        <li>kjidaa@gmail.com</li>
+                        <li>saidkjidaa100@gmail.com</li>
                     </ul>
                 </div>
 

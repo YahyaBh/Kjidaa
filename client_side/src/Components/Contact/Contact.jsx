@@ -111,13 +111,13 @@ const Contact = () => {
                     </div>
                 </a>
 
-                <a data-aos="fade-down" href="mailto:kjidaa@gmail.com" className="sing">
+                <a data-aos="fade-down" href="mailto:saidkjidaa100@gmail.com" className="sing">
                     <div className="cycle-top">
                         <AiFillMail />
                     </div>
                     <div className="body">
                         <h3>Email</h3>
-                        <h5>kjidaa@gmail.com</h5>
+                        <h5>saidkjidaa100@gmail.com</h5>
                     </div>
                 </a>
 
