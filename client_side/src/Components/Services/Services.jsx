@@ -6,14 +6,11 @@ import Slider from "@mui/material/Slider";
 import { AiOutlineInsertRowAbove } from 'react-icons/ai'
 import Loading from "../../Layouts/Loading/Loading";
 import cookie from "cookies-js";
-import Swal from "sweetalert2";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import ServicesData from '../../assets/API/Services.json'
 
 // eslint-disable-next-line react/prop-types
 const Services = () => {
-
-    const navigate = useNavigate()
 
     const [loading, setLoading] = useState(true);
     const [animat, setAnimat] = useState(false);
@@ -156,9 +153,12 @@ const Services = () => {
 
                     <div className="modal-content">
                         <span className="close" onClick={e => setActiveModal()}>&times;</span>
-                        <div className="buttons-container">
-                            <Link to={'/reservation'} >Voir Panier</Link>
-                            <button onClick={e => setActiveModal()}>Ajoute Autre</button>
+                        <div className="buttons-con">
+                            <p>Votre produit a été ajouté au panier avec succès</p>
+                            <div className="but">
+                                <Link to={'/reservation'} >Voir Panier</Link>
+                                <button onClick={e => setActiveModal()}>Ajoute Autre</button>
+                            </div>
                         </div>
                     </div>
                 </div>

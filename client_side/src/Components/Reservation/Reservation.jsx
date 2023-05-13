@@ -48,6 +48,14 @@ const Reservation = () => {
         console.log(item, filteredArray, order);
     }
 
+    let totalPrice = 0;
+
+    if (order) {
+        order.forEach((product) => {
+            totalPrice += product.price * product.quantity;
+        });
+    }
+
     return (
         loading ?
             <Loading />
@@ -141,7 +149,7 @@ const Reservation = () => {
                                             <>
 
                                                 <tr data-aos="fade-right" key={index}>
-                                                    <td className="delete" onClick={e => deleteItem(product , e)}><TiDelete /></td>
+                                                    <td className="delete" onClick={e => deleteItem(product, e)}><TiDelete /></td>
                                                     <td >{product.name}</td>
                                                     <td >{product.quantity}</td>
                                                     <td >{product.price} MAD</td>
@@ -156,7 +164,8 @@ const Reservation = () => {
 
 
                                 </table>
-                                <hr />
+                                {order ? <><hr />
+                                    <h2 className="total-price">Prix Total : <span>{totalPrice}</span> MAD</h2></> : ''}
                             </div>
 
 
