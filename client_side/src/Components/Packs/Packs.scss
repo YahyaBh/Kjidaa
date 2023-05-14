@@ -12,6 +12,7 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: scroll;
+            text-align: center;
 
             h2 {
                 font-size: 80px;
@@ -232,6 +233,10 @@
                 font-size: 28px;
                 outline: none;
                 color: #000;
+
+                @media screen and (max-width: 900px) {
+                    width: 90% !important;
+                }
             }
 
             select {
@@ -279,6 +284,11 @@
         border-radius: 20px;
         top: -20%;
         position: relative;
+
+
+        @media screen and (max-width: 900px) {
+            width: 70% !important;
+        }
     }
 
     /* The Close Button */
