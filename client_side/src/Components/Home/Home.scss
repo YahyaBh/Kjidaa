@@ -29,7 +29,7 @@
 
         .carousel-swiper {
             .swiper-container {
-                background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+                background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
                     url(../../../public/Images_public/Home/Carousel/MainCar.jpg);
                 background-size: cover;
                 background-clip: border-box;
@@ -39,12 +39,12 @@
             }
 
             .swiper-container:nth-child(2) {
-                background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+                background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
                     url(../../../public/Images_public/Home/Carousel/MainCar2.jpg);
             }
 
             .swiper-container:nth-child(2) {
-                background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+                background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
                     url(../../../public/Images_public/Home/Carousel/MainCar3.jpg);
             }
         }
