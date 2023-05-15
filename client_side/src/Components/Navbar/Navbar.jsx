@@ -53,7 +53,9 @@ const Navbar = ({ target }) => {
 
                 <ul>
                     <div>
-                        <img data-aos="fade-right" src={Logo} alt="Logo" />
+                        <a href='/'>
+                            <img data-aos="fade-right" src={Logo} alt="Logo" />
+                        </a>
                     </div>
 
                     <ul>
