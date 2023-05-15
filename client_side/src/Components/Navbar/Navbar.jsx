@@ -61,6 +61,7 @@ const Navbar = ({ target }) => {
                         <li data-aos="fade-left" data-aos-duration="400" className={target === 'nos-service' ? 'border_right active' : 'border_right'}><a href='nos-service'>Nos Services</a></li>
                         <li data-aos="fade-left" data-aos-duration="600" className={target === 'nos-packs' ? 'border_right active' : 'border_right'}><a href='nos-packs'>Nos Packs</a></li>
                         <li data-aos="fade-left" data-aos-duration="800" className={target === 'reservation' ? 'border_right active' : 'border_right'}><a href='reservation'>Reservation {products ? <span className='cycle-notice'>{products.length}</span> : ''}</a></li>
+                        <li data-aos="fade-left" data-aos-duration="1000" className={target === 'gallery' ? 'border_right active' : 'border_right'}><a href='gallery'>Gallery</a></li>
                         <li data-aos="fade-left" data-aos-duration="1000" className={target === 'a-propos' ? 'border_right active' : 'border_right'}><a href='a-propos'>A Propos</a></li>
                         {/* <li data-aos="fade-left" data-aos-duration="1200" className={target === 'blog' ? 'border_right active' : 'border_right'}><a href='/blog'>Blog</a></li> */}
                         <li data-aos="fade-left" data-aos-duration="1400" className={target === 'contact' ? `active` : ``}><a href='/contact'>Contact</a></li>
@@ -95,6 +96,7 @@ const Navbar = ({ target }) => {
                                     <li className={target === 'nos-service' ? 'border_right active' : 'border_right'}><a href='nos-service'>Nos Services</a></li>
                                     <li className={target === 'nos-produits' ? 'border_right active' : 'border_right'}><a href='nos-packs'>Nos Packs</a></li>
                                     <li className={target === 'reservation' ? 'border_right active' : 'border_right'}><a href='reservation'>Reservation</a></li>
+                                    <li data-aos="fade-left" data-aos-duration="1000" className={target === 'gallery' ? 'border_right active' : 'border_right'}><a href='gallery'>Gallery</a></li>
                                     <li className={target === 'a-props' ? 'border_right active' : 'border_right'}><a href='a-propos'>A Propos</a></li>
                                     {/* <li className={target === 'blog' ? 'border_right active' : 'border_right'}><a href='/blog'>Blog</a></li> */}
                                     <li className={target === 'contact' ? `active` : ``}><a href='/contact'>Contact</a></li>
