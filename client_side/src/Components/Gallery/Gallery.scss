@@ -72,7 +72,7 @@
                 grid-column-gap: 0px;
                 grid-row-gap: 0px;
                 gap: 10px;
-                margin: 40px;
+                margin: 100px 40px;
                 padding: 10px;
                 background-color: #7e53897b;
 
@@ -82,6 +82,15 @@
                         width: 100%;
                         height: 100%;
                     }
+                }
+            }
+
+            h2 {
+                text-align: center;
+                color: #fff;
+
+                spna {
+                    color: #6c4177;
                 }
             }
 
