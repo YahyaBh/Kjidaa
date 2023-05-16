@@ -7,24 +7,30 @@ const Gallery = () => {
 
 
     const [image, setImage] = useState();
-
+    const [zoomed, setZoomed] = useState(false);
 
     const zoomImage = (e) => {
+        if (e) {
+            if (!image) {
+                setImage(e)
+                setZoomed(true)
+                console.log(image);
+            } else {
+                setImage(null)
+                setZoomed(false)
+                console.log(image);
+                // setTimeout(function () {
 
-
-        if (image) {
-            setImage(e)
+                // }, 400);
+            }
         } else {
             setImage(null)
-
-            setTimeout(function () {
-
-            }, 400);
+            setZoomed(false)
         }
     }
 
 
-    
+
 
     return (
         <div id="gallery">
@@ -32,7 +38,7 @@ const Gallery = () => {
             <Navbar target={'gallery'} />
 
 
-            <div onClick={e => zoomImage} id="myModal" className="modal">
+            <div onClick={e => zoomImage(e)} id="myModal" className={zoomed ? "modal active" : 'modal'}>
                 <img className="modal-content" src={image ? image : ''} id="img" />
                 <div id="caption"></div>
             </div>
