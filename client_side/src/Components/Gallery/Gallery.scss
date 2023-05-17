@@ -29,7 +29,7 @@
 
         img {
             height: 80dvh;
-            object-fit: cover;
+            object-fit: scale-down;
             border-radius: 20px;
         }
     }
@@ -173,6 +173,7 @@
         }
 
         section {
+            margin: 100px 0;
             .parent {
                 display: grid;
                 grid-template-columns: repeat(8, 1fr);
