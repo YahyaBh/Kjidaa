@@ -26,7 +26,6 @@
         background-color: rgb(0, 0, 0); /* Fallback color */
         background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
 
-
         img {
             height: 80dvh;
             object-fit: scale-down;
@@ -189,7 +188,7 @@
                 }
 
                 div {
-                    transition: all .3s ease;
+                    transition: all 0.3s ease;
                     filter: grayscale(30%);
 
                     &:hover {
@@ -594,6 +593,202 @@
                     grid-column-end: 3;
                     grid-row-start: 84;
                     grid-row-end: 87;
+                }
+            }
+
+            .div29 {
+                grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row-start: 40;
+                grid-row-end: 43;
+
+                @media screen and (max-width: 900px) {
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                    grid-row-start: 87;
+                    grid-row-end: 90;
+                }
+            }
+
+            .div30 {
+                grid-column-start: 5;
+                grid-column-end: 9;
+                grid-row-start: 40;
+                grid-row-end: 43;
+
+                @media screen and (max-width: 900px) {
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                    grid-row-start: 90;
+                    grid-row-end: 93;
+                }
+            }
+
+            .div31 {
+                grid-column-start: 1;
+                grid-column-end: 4;
+                grid-row-start: 43;
+                grid-row-end: 46;
+
+                @media screen and (max-width: 900px) {
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                    grid-row-start: 96;
+                    grid-row-end: 99;
+                }
+            }
+
+            .div32 {
+                grid-column-start: 4;
+                grid-column-end: 9;
+                grid-row-start: 43;
+                grid-row-end: 46;
+
+                @media screen and (max-width: 900px) {
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                    grid-row-start: 99;
+                    grid-row-end: 102;
+                }
+            }
+
+            .div33 {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 46;
+                grid-row-end: 49;
+
+                @media screen and (max-width: 900px) {
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                    grid-row-start: 102;
+                    grid-row-end: 105;
+                }
+            }
+
+            .div34 {
+                grid-column-start: 3;
+                grid-column-end: 7;
+                grid-row-start: 46;
+                grid-row-end: 49;
+
+                @media screen and (max-width: 900px) {
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                    grid-row-start: 105;
+                    grid-row-end: 108;
+                }
+            }
+
+            .div35 {
+                grid-column-start: 7;
+                grid-column-end: 9;
+                grid-row-start: 46;
+                grid-row-end: 49;
+
+                @media screen and (max-width: 900px) {
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                    grid-row-start: 108;
+                    grid-row-end: 111;
+                }
+            }
+
+            .div36 {
+                grid-column-start: 1;
+                grid-column-end: 6;
+                grid-row-start: 49;
+                grid-row-end: 52;
+
+                @media screen and (max-width: 900px) {
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                    grid-row-start: 111;
+                    grid-row-end: 114;
+                }
+            }
+
+            .div37 {
+                grid-column-start: 6;
+                grid-column-end: 9;
+                grid-row-start: 49;
+                grid-row-end: 52;
+
+                @media screen and (max-width: 900px) {
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                    grid-row-start: 114;
+                    grid-row-end: 117;
+                }
+            }
+
+            .div38 {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 52;
+                grid-row-end: 55;
+
+                @media screen and (max-width: 900px) {
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                    grid-row-start: 117;
+                    grid-row-end: 120;
+                }
+            }
+
+            .div39 {
+                grid-column-start: 2;
+                grid-column-end: 6;
+                grid-row-start: 52;
+                grid-row-end: 55;
+
+                @media screen and (max-width: 900px) {
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                    grid-row-start: 120;
+                    grid-row-end: 123;
+                }
+            }
+
+            .div40 {
+                grid-column-start: 6;
+                grid-column-end: 9;
+                grid-row-start: 52;
+                grid-row-end: 55;
+
+                @media screen and (max-width: 900px) {
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                    grid-row-start: 123;
+                    grid-row-end: 126;
+                }
+            }
+
+            .div41 {
+                grid-column-start: 1;
+                grid-column-end: 4;
+                grid-row-start: 55;
+                grid-row-end: 58;
+
+                @media screen and (max-width: 900px) {
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                    grid-row-start: 126;
+                    grid-row-end: 129;
+                }
+            }
+
+            .div42 {
+                grid-column-start: 4;
+                grid-column-end: 9;
+                grid-row-start: 55;
+                grid-row-end: 58;
+
+                @media screen and (max-width: 900px) {
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                    grid-row-start: 120;
+                    grid-row-end: 123;
                 }
             }
         }

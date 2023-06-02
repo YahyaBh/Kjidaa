@@ -153,6 +153,61 @@ const Gallery = () => {
                         <div className="div28">
                             <img onClick={e => zoomImage('./Images_public/Gallery/WhatsApp Image 2023-05-15 at 21.23.33.jpg')} src="./Images_public/Gallery/WhatsApp Image 2023-05-15 at 21.23.33.jpg" alt="IMAGE29" />
                         </div>
+                        {/* --------------------------------------- */}
+                        <div className="div29">
+                            <img onClick={e => zoomImage('./Images_public/Gallery/New 6-2/IMG-20230602-WA0029.jpg')} src="./Images_public/Gallery/New 6-2/IMG-20230602-WA0029.jpg" alt="IMAGE30" />
+                        </div>
+                        <div className="div30">
+                            <img onClick={e => zoomImage('./Images_public/Gallery/New 6-2/IMG-20230602-WA0031.jpg')} src="./Images_public/Gallery/New 6-2/IMG-20230602-WA0031.jpg" alt="IMAGE31" />
+                        </div>
+                        <div className="div31">
+                            <img onClick={e => zoomImage('./Images_public/Gallery/New 6-2/IMG-20230602-WA0032.jpg')} src="./Images_public/Gallery/New 6-2/IMG-20230602-WA0032.jpg" alt="IMAGE32" />
+                        </div>
+                        <div className="div29">
+                            <img onClick={e => zoomImage('./Images_public/Gallery/New 6-2/IMG-20230602-WA0033.jpg')} src="./Images_public/Gallery/New 6-2/IMG-20230602-WA0033.jpg" alt="IMAGE33" />
+                        </div>
+                        <div className="div30">
+                            <img onClick={e => zoomImage('./Images_public/Gallery/New 6-2/IMG-20230602-WA0035.jpg')} src="./Images_public/Gallery/New 6-2/IMG-20230602-WA0035.jpg" alt="IMAGE34" />
+                        </div>
+                        <div className="div31">
+                            <img onClick={e => zoomImage('./Images_public/Gallery/New 6-2/IMG-20230602-WA0036.jpg')} src="./Images_public/Gallery/New 6-2/IMG-20230602-WA0036.jpg" alt="IMAGE35" />
+                        </div>
+                        <div className="div29">
+                            <img onClick={e => zoomImage('./Images_public/Gallery/New 6-2/IMG-20230602-WA0037.jpg')} src="./Images_public/Gallery/New 6-2/IMG-20230602-WA0037.jpg" alt="IMAGE36" />
+                        </div>
+                        <div className="div30">
+                            <img onClick={e => zoomImage('./Images_public/Gallery/New 6-2/IMG-20230602-WA0039.jpg')} src="./Images_public/Gallery/New 6-2/IMG-20230602-WA0039.jpg" alt="IMAGE37" />
+                        </div>
+                        <div className="div31">
+                            <img onClick={e => zoomImage('./Images_public/Gallery/New 6-2/IMG-20230602-WA0042.jpg')} src="./Images_public/Gallery/New 6-2/IMG-20230602-WA0042.jpg" alt="IMAGE38" />
+                        </div>
+                        <div className="div32">
+                            <img onClick={e => zoomImage('./Images_public/Gallery/New 6-2/IMG-20230602-WA0045.jpg')} src="./Images_public/Gallery/New 6-2/IMG-20230602-WA0045.jpg" alt="IMAGE39" />
+                        </div>
+                        <div className="div33">
+                            <img onClick={e => zoomImage('./Images_public/Gallery/New 6-2/IMG-20230602-WA0049.jpg')} src="./Images_public/Gallery/New 6-2/IMG-20230602-WA0049.jpg" alt="IMAGE40" />
+                        </div>
+                        <div className="div34">
+                            <img onClick={e => zoomImage('./Images_public/Gallery/New 6-2/IMG-20230602-WA0050.jpg')} src="./Images_public/Gallery/New 6-2/IMG-20230602-WA0050.jpg" alt="IMAGE41" />
+                        </div>
+                        <div className="div35">
+                            <img onClick={e => zoomImage('./Images_public/Gallery/New 6-2/IMG-20230602-WA0051.jpg')} src="./Images_public/Gallery/New 6-2/IMG-20230602-WA0051.jpg" alt="IMAGE42" />
+                        </div>
+                        <div className="div36">
+                            <img onClick={e => zoomImage('./Images_public/Gallery/New 6-2/IMG-20230602-WA0054.jpg')} src="./Images_public/Gallery/New 6-2/IMG-20230602-WA0054.jpg" alt="IMAGE43" />
+                        </div>
+                        <div className="div37">
+                            <img onClick={e => zoomImage('./Images_public/Gallery/New 6-2/IMG-20230602-WA0057.jpg')} src="./Images_public/Gallery/New 6-2/IMG-20230602-WA0057.jpg" alt="IMAGE44" />
+                        </div>
+                        <div className="div38">
+                            <img onClick={e => zoomImage('./Images_public/Gallery/New 6-2/IMG-20230602-WA0062.jpg')} src="./Images_public/Gallery/New 6-2/IMG-20230602-WA0062.jpg" alt="IMAGE45" />
+                        </div>
+                        <div className="div39">
+                            <img onClick={e => zoomImage('./Images_public/Gallery/New 6-2/IMG-20230602-WA0070.jpg')} src="./Images_public/Gallery/New 6-2/IMG-20230602-WA0070.jpg" alt="IMAGE46" />
+                        </div>
+                        <div className="div40">
+                            <img onClick={e => zoomImage('./Images_public/Gallery/New 6-2/IMG-20230602-WA0071.jpg')} src="./Images_public/Gallery/New 6-2/IMG-20230602-WA0071.jpg" alt="IMAGE47" />
+                        </div>
                     </div>
 
 
@@ -237,6 +292,57 @@ const Gallery = () => {
                         </div>
                         <div className="div25">
                             <img onClick={e => zoomImage('./Images_public/Gallery/IMG-20230428-WA0037.jpg')} src="./Images_public/Gallery/IMG-20230428-WA0037.jpg" alt="IMAGE26" />
+                        </div>
+                        <div className="div26">
+                            <img onClick={e => zoomImage('./Images_public/Gallery/New 6-2/IMG-20230602-WA0030.jpg')} src="./Images_public/Gallery/New 6-2/IMG-20230602-WA0030.jpg" alt="IMAGE27" />
+                        </div>
+                        <div className="div27">
+                            <img onClick={e => zoomImage('./Images_public/Gallery/New 6-2/IMG-20230602-WA0034.jpg')} src="./Images_public/Gallery/New 6-2/IMG-20230602-WA0034.jpg" alt="IMAGE28" />
+                        </div>
+                        <div className="div28">
+                            <img onClick={e => zoomImage('./Images_public/Gallery/New 6-2/IMG-20230602-WA0040.jpg')} src="./Images_public/Gallery/New 6-2/IMG-20230602-WA0040.jpg" alt="IMAGE29" />
+                        </div>
+                        <div className="div29">
+                            <img onClick={e => zoomImage('./Images_public/Gallery/New 6-2/IMG-20230602-WA0038.jpg')} src="./Images_public/Gallery/New 6-2/IMG-20230602-WA0038.jpg" alt="IMAGE30" />
+                        </div>
+                        <div className="div30">
+                            <img onClick={e => zoomImage('./Images_public/Gallery/New 6-2/IMG-20230602-WA0041.jpg')} src="./Images_public/Gallery/New 6-2/IMG-20230602-WA0041.jpg" alt="IMAGE31" />
+                        </div>
+                        <div className="div31">
+                            <img onClick={e => zoomImage('./Images_public/Gallery/New 6-2/IMG-20230602-WA0043.jpg')} src="./Images_public/Gallery/New 6-2/IMG-20230602-WA0043.jpg" alt="IMAGE32" />
+                        </div>
+                        <div className="div32">
+                            <img onClick={e => zoomImage('./Images_public/Gallery/New 6-2/IMG-20230602-WA0044.jpg')} src="./Images_public/Gallery/New 6-2/IMG-20230602-WA0044.jpg" alt="IMAGE33" />
+                        </div>
+                        <div className="div33">
+                            <img onClick={e => zoomImage('./Images_public/Gallery/New 6-2/IMG-20230602-WA0047.jpg')} src="./Images_public/Gallery/New 6-2/IMG-20230602-WA0047.jpg" alt="IMAGE34" />
+                        </div>
+                        <div className="div34">
+                            <img onClick={e => zoomImage('./Images_public/Gallery/New 6-2/IMG-20230602-WA0048.jpg')} src="./Images_public/Gallery/New 6-2/IMG-20230602-WA0048.jpg" alt="IMAGE35" />
+                        </div>
+                        <div className="div35">
+                            <img onClick={e => zoomImage('./Images_public/Gallery/New 6-2/IMG-20230602-WA0053.jpg')} src="./Images_public/Gallery/New 6-2/IMG-20230602-WA0053.jpg" alt="IMAGE36" />
+                        </div>
+                        <div className="div36">
+                            <img onClick={e => zoomImage('./Images_public/Gallery/New 6-2/IMG-20230602-WA0055.jpg')} src="./Images_public/Gallery/New 6-2/IMG-20230602-WA0055.jpg" alt="IMAGE37" />
+                        </div>
+                        <div className="div37">
+                            <img onClick={e => zoomImage('./Images_public/Gallery/New 6-2/IMG-20230602-WA0058.jpg')} src="./Images_public/Gallery/New 6-2/IMG-20230602-WA0058.jpg" alt="IMAGE38" />
+                        </div>
+                        <div className="div38">
+                            <img onClick={e => zoomImage('./Images_public/Gallery/New 6-2/IMG-20230602-WA0060.jpg')} src="./Images_public/Gallery/New 6-2/IMG-20230602-WA0060.jpg" alt="IMAGE39" />
+                        </div>
+                        <div className="div39">
+                            <img onClick={e => zoomImage('./Images_public/Gallery/New 6-2/IMG-20230602-WA0065.jpg')} src="./Images_public/Gallery/New 6-2/IMG-20230602-WA0065.jpg" alt="IMAGE40" />
+                        </div>
+                        <div className="div40">
+                            <img onClick={e => zoomImage('./Images_public/Gallery/New 6-2/IMG-20230602-WA0066.jpg')} src="./Images_public/Gallery/New 6-2/IMG-20230602-WA0066.jpg" alt="IMAGE41" />
+                        </div>
+                        <div className="div41">
+                            <img onClick={e => zoomImage('./Images_public/Gallery/New 6-2/IMG-20230602-WA0067.jpg')} src="./Images_public/Gallery/New 6-2/IMG-20230602-WA0067.jpg" alt="IMAGE42" />
+                        </div>
+                        <div className="div42">
+                            <img onClick={e => zoomImage('./Images_public/Gallery/New 6-2/IMG-20230602-WA0069.jpg')} src="./Images_public/Gallery/New 6-2/IMG-20230602-WA0069.jpg" alt="IMAGE43" />
                         </div>
                     </div>
                 </section>
